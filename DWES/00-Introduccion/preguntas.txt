@@ -1,0 +1,15 @@
+1. Determinar si un numero es igual a 6
+2. Calcule el doble de un número
+3. Muestre los números del 5 al 1
+4. determine si un número es positivo
+5. Calcule el area de un cuadrado y el volumen de un cubo dado su lado
+6. Muestre los números pares del 1 al diez
+7. Determina si un numero es múltiplo de tres o no;
+8. Calcule el área de un triangulo rectangulo dado sus catetos
+9. Determine si un numero es positivo, negativo o 0
+10. Calcule el promedio de dos numero
+11. Calcule la sume de los numeros pares del 1 al N, donde N es un número ingresado por el usuario
+12. Determine si un número es un número perfecto. Un numero perfecto es aquel cuya suma de divisores propios (distintos del propio) es igual al numero
+13. Calcule el factorial de un numero
+14. Dado la base y el exponente, calcule la potencia
+15. Calcule la media de varios numeros positivos introducidos por teclado mientras sean distintos de 0
