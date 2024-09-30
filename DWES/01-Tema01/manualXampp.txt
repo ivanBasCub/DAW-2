@@ -1,0 +1,10 @@
+Manual de instalación del XAMPP:
+- Usar el siguiente link: https://www.apachefriends.org/es/index.html
+- Instalar la version 8.2.12 de XAMPP
+- Seleccionas los componentes que necesites (Dejamos MySQL y phpMyAdmin)
+- Elegimos el directorio de instalacion 
+- Seleccionamos el idioma
+- Ya estaria
+
+Maunal de instalacion de extensiones Visual studio Code:
+1. Spanish Language Pack for Visual Studio Code (Para tener el idioma español)

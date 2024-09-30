@@ -1,0 +1,5 @@
+Pensar en una aplicación web que es en grupo
+- Va a estar divido por las tres capas divisorias (presentación / lógica / datos)
+- Que funcionalidad tiene la aplicación web
+- Presentación de la web
+- Diagrama de relación entre las tres capas
