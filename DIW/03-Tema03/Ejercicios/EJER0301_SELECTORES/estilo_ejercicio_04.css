@@ -1,0 +1,79 @@
+/* Importamos la fuente de texto */
+body{
+    font-family: 'Grenze';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/grenze/v15/O4ZTFGb7hR12BxqH92Imqgw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+/* Formato del desplegable */
+select {
+    /* Formato de letra en el boton */
+    font-family: 'Grenze';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/grenze/v15/O4ZTFGb7hR12BxqH92Imqgw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    /* Cambiamos los bordes */
+    border-radius: 5px;
+}
+
+/* Contol de las letras del nombre*/
+#nombre{
+    background-color: rgb(253, 208, 9);
+}
+#nombre:invalid {
+    background-color: rgb(154, 0, 0);
+}
+
+/* Control de puntos de cordura */
+#puntosCordura{
+    background-color: rgb(253, 208, 9);
+}
+#puntosCordura:out-of-range {
+    background-color: rgb(154, 0, 0);
+}
+
+/*Poner la imagen oculta de Cthulhu */
+.img_oculta{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+#dificultad:checked ~ .img_oculta {
+    display: block;
+}
+
+
+/* Formato del boton */
+input[type = "submit"] {
+    /* Formato de letra en el boton */
+    font-family: 'Grenze';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/grenze/v15/O4ZTFGb7hR12BxqH92Imqgw.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    /* Cambiamos el borde del boton */
+    border-radius: 15px;
+    border: none;
+    /* Ponemos las letras en mayusculas */
+    text-transform: uppercase;
+    /* Cambio del fondo de color y ponemos las sombras */  
+    background-color: rgb(253, 208, 9);
+    box-shadow: 1px 1px 5px rgb(49, 0, 0);
+
+}
+
+/* Enlace de el nombre */
+p a{
+    text-decoration: none;
+    color: black;
+}
+p a:active {
+    color:rgb(253, 208, 9);
+}

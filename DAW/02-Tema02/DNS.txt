@@ -1,0 +1,11 @@
+DNS (Domain Name Server) es un sistema de nomenclatura jerárquico descentralizado para dispositivos conectados a redes IP como Internet o una red privada. Este sistema asocia información variada con nombres de dominio asignados a cada uno de los participantes. Su función más importante es la resolución de nombres, «traducir» nombres inteligibles para las personas en identificadores binarios asociados con los equipos conectados a la red con el propósito de poder localizar y direccionar estos equipos mundialmente.
+
+ICANN is the global ICANN is the global non-profit organization responsible for coordinating the Internet's core systems of unique identifiers, most notably the Domain Name System (DNS). The DNS is a distributed online database service that translates easy-to-remember domain names to numerical Internet protocol (IP) addresses (for example, the DNS will translate www.icann.org to 192.0.34.65).
+
+The DNS is organized hierarchically. ICANN is responsible for designating and coordinating the top-level domain name database operators ("registries"). The top-level domain (TLD) registries provide authoritative, publicly-accessible online database services for their respective top-level domain name (i.e. .de, .net, .info). In turn, registrants – those who have registered second- or third-level domain names (for example: icann.org or buckingham-palace.co.uk) – are responsible for DNS services relating to their own domains. In addition, some TLD registries do not provide registration services directly to registrants, but rather utilize networks of authorized specialist companies ("registrars"), which compete for registrant customers, authorize changes to the online registry database, and handle payments.
+
+how it works ICANN?
+https://blog.neothek.com/entendiendo-la-jerarquia-de-registro-registrador-y-registrante/
+
+How do I get a domain name?
+https://www.forbes.com/advisor/business/how-register-domain-name/

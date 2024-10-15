@@ -1,0 +1,48 @@
+/*Fondo de la web*/
+body{
+    background-color: rgb(183, 183, 183);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Colocacion del titulo*/
+header h1{
+    text-align: center;
+}
+
+/* Colocacion de los apartados de la lista */
+ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+/* Quitamos la decoracion de la lista y modificamos el tamaño*/
+.navegacion{
+    list-style-type: none;
+    width: auto;
+    margin-bottom: 20%;
+}
+/*Colocacion de las imagenes */
+ul li:nth-child(2){
+    list-style-image: url("assets/Ejer01/plus-circle.svg");
+}
+ul li:nth-child(3){
+    list-style-image: url("assets/Ejer01/cart.svg");
+}
+ul li:nth-child(4){
+    list-style-image: url("assets/Ejer01/star-fill.svg");
+}
+ul li:nth-child(5){
+    list-style-image: url("assets/Ejer01/filetype-pdf.svg");
+}
+ul li:nth-child(6){
+    list-style-image: url("assets/Ejer01/search.svg");
+}
+ul li:nth-child(7){
+    list-style-image: url("assets/Ejer01/shield-exclamation.svg");
+}
+
+
+/* Formateo del texto de los enlaces*/
+.navegacion a{
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,8 @@
+Ipv6 address per host:
+https://datatracker.ietf.org/meeting/115/materials/slides-115-v6ops-07-minimizing-damage-of-limiting-number-of-ipv6-addresses-per-host-00
+Multicast Ipv6:
+https://www.sapalomera.cat/moodlecf/RS/1/course/module8/8.2.5.1/8.2.5.1.html
+Ipv6:
+https://en.wikipedia.org/wiki/IPv6_address
+Calculate the ipv6 using the MAC address:
+https://ben.akrin.com/mac-address-to-ipv6-link-local-address-online-converter/
