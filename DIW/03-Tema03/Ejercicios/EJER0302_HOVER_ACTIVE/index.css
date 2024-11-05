@@ -1,0 +1,31 @@
+/* Ajustes de las dimensiones de la página*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    width: 30%;
+    background-color: black;
+} 
+/*Configuracion inicial de los componentes de la lista*/
+li{
+    /*Quitar la decoracion de la lista*/
+    list-style: none;
+    /* Colocacion y color del texto */
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    /* Dimensiones del elemento li y fondo de color */
+    float: left;
+    width: 50%;
+    padding: 10%;
+    margin: 1%;
+    height: auto;
+    background-color: rgb(204, 155, 202);
+}
+li:hover{
+    background-color: blueviolet;
+    margin-left: 10%;
+}
+li:active{
+    background-color: rgb(204, 155, 202);
+}

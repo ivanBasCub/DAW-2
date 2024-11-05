@@ -1,0 +1,81 @@
+/* Color de fondo de la página web */
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Aliniamiento de los textos */
+.derecha{
+    text-align: right;
+}
+.izquierda{
+    text-align: left;
+}
+.centro{
+    text-align: center;
+}
+
+/* Modificamos el primero contenedor */
+.contenedor1{
+    background-color: peru;
+    border: 2px solid rgb(160, 104, 49);
+    width: 80%;
+    margin: auto;
+    padding: 0.5%;
+    padding-bottom: 2.5%;
+}
+.contenedor1 p{
+    margin: 0;
+}
+
+/* Modificamos el formato de los contenedores que estan en los extremos */
+.contenedor_laterales{
+    width: 35%;
+    height:auto;
+    padding: 0.5%;
+    padding-bottom: 10%;
+    margin: 1%;
+}
+.contenedor_laterales p{
+    margin: 0;
+}
+
+/* Colores de fondo y bordes de los contenedores laterales y su posicionamiento*/
+.contenedor2{
+    background-color: rgb(255, 255, 125);
+    border: 3px solid rgb(175, 175, 103);
+    float: left;
+}
+.contenedor3{
+    background-color: rgb(255, 203, 254);
+    border: 3px solid rgb(175, 141, 174);
+    float: left;
+}
+.contenedor4{
+    background-color: rgb(173, 235, 249);
+    border: 3px solid rgb(121, 157, 165);
+    float: right;
+    
+}
+.contenedor5{
+    background-color: rgb(254, 128, 128);
+    border: 3px solid rgb(175, 103, 103);
+    float: right;
+}
+
+/* Modificamos el ultimo contenedor*/
+.contenedor6{
+    background-color: rgb(103, 205, 63);
+    border: 2px solid rgb(73, 160, 49);
+    width: 35%;
+    margin: auto;
+    padding: 0.5%;
+    padding-bottom: 10%;
+    position: absolute;
+    top: 32.5%;
+    left: 32.5%;
+}
+.contenedor6 p{
+    margin: 0;
+}

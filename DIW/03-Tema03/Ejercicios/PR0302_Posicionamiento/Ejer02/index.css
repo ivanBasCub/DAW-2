@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Empezamos con la cabecera */
+header{
+    position: sticky;
+    top: 0;
+}
+/* Colocamos el titulo de la página web */
+header h1{
+    background-color: #2E2E2E;
+    color: white;
+    margin: 0;
+    padding-left: 2.5%;
+    padding-bottom: 0.5%;
+    margin-bottom: 0.5%;
+}
+/* Modificamos la lista para que sea de manera lateral */
+.navbar{
+    float: left;
+    width: 100%;
+    background-color:#2E2E2E;
+    color: white;
+    font-weight: 600;
+}
+.navbar ul{
+    list-style: none;
+    margin: 0;
+}
+.navbar ul li{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.login{
+    float: right;
+    padding-right: 2.5%;
+    text-decoration: none;
+    color: white;
+
+}
+
+/* Parte de la izquierda */
+.mainizq{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+/* Articulo */
+.mainizq article{
+    background-color: #028022;
+    color: white;
+    width: 95%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.mainizq article h2{
+    margin: 0;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+}
+.mainizq article p{
+    margin: 0;
+    padding-left: 2.5%;
+    margin-bottom: 2%;
+}
+.mainizq article img{
+    width: 10%;
+    margin: 1%;
+    margin-left: 2.5%;
+    vertical-align: middle;
+
+}
+
+/* Lista de enlaces a artículos */
+.listArt{
+    background-color: #028022;
+    color: white;
+    width: 95%;
+    height: 425px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.listArt h3{
+    padding: 2.5%;
+}
+.articulo{
+    background-color: #2E2E2E;
+    width: 95%;
+    height: 80px;
+    margin: auto;
+    margin-bottom: 1%;
+    color: white;
+}
+.articulo img{
+    float: left;
+    margin: 1%;
+    width: 64px;
+}
+.articulo div{
+    float: left;
+    padding-top: 1%;
+}
+
+.articulo div h4,p{
+    margin: 0;
+    margin-left: 5%;
+}
+/* Parte de la derecha */
+.maindrch{
+    width: 50%;
+    height: auto;
+    float: right;
+}
+/* Barra de busqueda */ 
+.busqueda{
+    float: right;
+    width:  90%;
+    padding: 2.5%;
+    background-color: #028022;
+    color: white;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.busqueda p{
+    padding-left: 5%;
+}
+/* Imagen de la busqueda */
+.foto{
+    width: 95%;
+    background-color: #028022;
+    color: white;
+    margin-bottom: 2.5%;
+    float: right;
+    align-items: center;
+}
+
+.foto img{
+    width: 95%;
+    height: 300px;
+    margin: 2.5%;
+}
+.foto p{
+    margin: 0;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+}
+/* Publicidad */
+.publi{
+    background-color: #50ac67;
+    text-align: center;
+    float: right;
+    font-weight: 600;
+}
+.tp1{
+    width: 90%;
+    padding: 2.5%;
+    margin-bottom: 1.25%;
+}
+.tp2{
+    width: 41.25%;
+    padding: 2.5%;
+    padding-bottom: 5%;
+    margin-left: 2.5%;
+}
+.tp3{
+    width: 41.25%;
+    padding: 2.5%;
+    padding-bottom: 5%;
+}
+    
+/* Footer */
+footer{
+    background-color: #2E2E2E;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    text-align: center;
+    padding: 1%;
+}

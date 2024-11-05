@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Bascones Cubillo">
+    <title>Datos Personales</title>
+</head>
+<body>
+    <form action="301datosPersonales.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <fieldset>
+                <legend>Nombre y Apellidos</legend>
+                <input type="text" name="name" placeholder="Nombre">
+                <input type="text" name="subname1" placeholder="Primer Apellido">
+                <input type="text" name="subname2" placeholder="Segundo Apellido">
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <input type="text" name="dni" placeholder="DNI">
+                <input type="tel" name="telfono" placeholder="Telefono"><br>
+                <label for="sex">Genero:</label><br>
+                <input type="radio" name="sex" value="H"><label>Hombre</label>
+                <input type="radio" name="sex" value="M"><label>Mujer</label>
+                <input type="radio" name="sex" value="N"><label>Helicoptero apache de combate</label>
+                <br>
+                <label for="fechnac">Fecha de Nacimiento:</label>
+                <input type="date" name="fechnac">
+            </fieldset>
+            <fieldset>
+                <legend>Estudios e Idiomas</legend>
+                <label for="estudios">Estudios</label>
+                <select name="estudios">
+                    <option value="eso">ESO</option>
+                    <option value="bach">Bachillerato</option>
+                    <optgroup label="Formación Profesional">
+                        <option value="fp1">Formacion Basica</option>
+                        <option value="fp2">Grado Medio</option>
+                        <option value="fp3">Grado Superior</option>
+                    </optgroup>
+                    <option value="uni">Universitarios</option>
+                </select>
+                <input type="text" name="idiomas" placeholder="Idiomas">
+            </fieldset>
+            <fieldset>
+                <legend>Documentos Adjuntos</legend>
+                <label for="dnifile">Foto del DNI</label>
+                <input type="file" name="dnifile" accept="image/png">
+                <label for="curriculumfile">Curriculum</label>
+                <input type="file" name="curriculumfile" accept="application/pdf">
+            </fieldset>
+            <input type="submit" value="Guardar Información" name="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
