@@ -1,0 +1,27 @@
+body{
+    background-color: #FDFCD2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    margin-bottom: 0%;
+    color: #377C3E;
+    border-bottom: #377C3E solid 2px;
+}
+p{
+    text-align: center;
+}
+
+/*Modificaciones de la tabla*/
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid black;
+    
+}
+tr:first-child{
+    background: #377C3E;
+    background:  linear-gradient(0deg, #1c3f20,#4daa56);
+    color: white;
+    text-transform: uppercase;
+}
