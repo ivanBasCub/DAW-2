@@ -1,0 +1,145 @@
+body{
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+}
+/* Configuración de los contenedores principales de los productos*/
+.container{
+    float: left;
+    width: 180px;
+    height: 300px;
+    font-size: 14px;
+    margin: 1%;
+}
+.container:hover{
+    border: 2px solid green;
+}
+/* Modificaciones de la imagen del producto y su información*/
+.producto img{
+    width: 95%;
+    margin: 1%;
+    border: 1px solid rgb(185, 185, 185);
+}
+.precio{
+    /* Tamaño y colocación del texto */
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    /* Posicionamiento y dimensiones del elemento */
+    position: relative;
+    top: -20px;
+    left: 5px;
+    width: 80%;
+    height: 30px;
+    /* Colocación del fondo */
+    background-image: url("../Assets/boton_amarillo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nom_producto{
+    position: relative;
+    top: -15px;
+    margin: 1%;
+    text-align: left;
+    color: green;
+    text-transform: uppercase;
+}
+.options{
+    visibility: hidden;
+    position: absolute;
+    top: 130px;
+    width: 100%;
+}
+.producto img:hover ~ .options{
+    visibility: visible;
+}
+/* Implementacion de las imagenes de la parte de arriba */
+.vista_previa{
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-vista-previa.png);
+}
+.no_vista_previa{
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-vista-previa-gris.png);
+}
+.lista_deseo{
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-listadeseo.png);
+}
+.no_lista_deseo{
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-listadeseo-gris.png);
+}
+.comparador{
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-comparador.png);
+}
+.no_comparador{
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-comparador-gris.png);
+}
+.configuracion{
+    float: left;
+    margin: 1px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-configurador.png);
+}
+.no_configuracion{
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-configurador-gris.png);
+}
+.carro{
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-carro.png);
+}
+.no_carro{
+    float: left;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    content: url(../Assets/icono-ficha-carro-gris.png);
+}
+/* Implementacion de las imagenes de la aparte de abajo */
+.top_ventas {
+    float: left;
+    content: url(../Assets/logo_topventas-mini-reducido.png);
+    margin-left: 1%;
+}
+.novedad{
+    float: left;
+    content: url(../Assets/logo_novedad-mini-reducido.png);
+}
+.mucho_stock{
+    float: right;
+    content: url(../Assets/stock-2b.png);
+    margin-right: 1%;
+}
+.poco_stock{
+    float: right;
+    content: url(../Assets/stock-4.png);
+    margin-right: 1%;
+}

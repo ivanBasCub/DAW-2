@@ -2,26 +2,44 @@ body{
     background-color: #FDFCD2;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+/* Modificaciones al titulo de la web*/ 
 h1{
-    margin-bottom: 0%;
+    margin-bottom: 2%;
     color: #377C3E;
-    border-bottom: #377C3E solid 2px;
+    /* Para hacer el borde con degradado */
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(to right, #377C3E, #FDFCD2);
+    border-image-slice: 1;
 }
+/* Modificaciones del texto */
 p{
-    text-align: center;
+    text-align: right;
+    margin: 0;
 }
 
 /*Modificaciones de la tabla*/
 table{
     border-collapse: collapse;
+    width: 100%;
+    margin: 0;
 }
 td,th{
     border: 1px solid black;
-    
+    text-align: left;
+    padding: 0.25%;
 }
+/* Modificación del titulo */
 tr:first-child{
     background: #377C3E;
-    background:  linear-gradient(0deg, #1c3f20,#4daa56);
+    background:  linear-gradient(0deg, #4daa56,#1c3f20);
     color: white;
     text-transform: uppercase;
+}
+/* Cambio del fonde de las filas pares*/
+tr:nth-child(even){
+    background-color: white;
+}
+/* Ponemos un color verde al apartado de calificacion */
+tr td:last-child{
+    color: #1c3f20;
 }
