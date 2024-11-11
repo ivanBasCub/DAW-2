@@ -53,74 +53,40 @@ body{
     visibility: visible;
 }
 /* Implementacion de las imagenes de la parte de arriba */
-.vista_previa{
+.options div{
     float: left;
     margin: 3px;
     width: 30px;
     height: 30px;
+}
+.vista_previa{
     content: url(../Assets/icono-ficha-vista-previa.png);
 }
 .no_vista_previa{
-    float: left;
-    margin: 3px;
-    width: 30px;
-    height: 30px;
     content: url(../Assets/icono-ficha-vista-previa-gris.png);
 }
 .lista_deseo{
-    float: left;
-    margin: 3px;
-    width: 30px;
-    height: 30px;
     content: url(../Assets/icono-ficha-listadeseo.png);
 }
 .no_lista_deseo{
-    float: left;
-    margin: 3px;
-    width: 30px;
-    height: 30px;
     content: url(../Assets/icono-ficha-listadeseo-gris.png);
 }
 .comparador{
-    float: left;
-    margin: 3px;
-    width: 30px;
-    height: 30px;
     content: url(../Assets/icono-ficha-comparador.png);
 }
 .no_comparador{
-    float: left;
-    margin: 3px;
-    width: 30px;
-    height: 30px;
     content: url(../Assets/icono-ficha-comparador-gris.png);
 }
 .configuracion{
-    float: left;
-    margin: 1px;
-    width: 30px;
-    height: 30px;
     content: url(../Assets/icono-ficha-configurador.png);
 }
 .no_configuracion{
-    float: left;
-    margin: 3px;
-    width: 30px;
-    height: 30px;
     content: url(../Assets/icono-ficha-configurador-gris.png);
 }
 .carro{
-    float: left;
-    margin: 3px;
-    width: 30px;
-    height: 30px;
     content: url(../Assets/icono-ficha-carro.png);
 }
 .no_carro{
-    float: left;
-    margin: 3px;
-    width: 30px;
-    height: 30px;
     content: url(../Assets/icono-ficha-carro-gris.png);
 }
 /* Implementacion de las imagenes de la aparte de abajo */
