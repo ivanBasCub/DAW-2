@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Bascones Cubillo">
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="stylesheet" href="static/insert_data.css">
+    <title>Añadir un nuevo Alumno</title>
+</head>
+<body>
+    <h2>Inserte los datos del nuevo alumno</h2>
+    <form action="../controlador/insertar.php" method="post">
+        <input type="text" name="nombre" placeholder="Nombre"><br>
+        <input type="text" name="apellido1" placeholder="Primer Apellido">
+        <input type="text" name="apellido2" placeholder="Segundo Apellido"><br>
+        <input type="text" name="dni" placeholder="DNI">
+        <input type="tel" name="telefono" placeholder="Numero de telefono">
+        <input type="email" name="email" placeholder="Correo Electronico"><br>
+        <input type="text" name="curso" placeholder="Curso que esta el alumno"><br>
+        <input type="submit" class="btn" value="Introducir nuevo Alumno">
+    </form>
+
+    <a href="index.php" class="btn">Volver a la pagina principal</a>
+
+</body>
+</html>

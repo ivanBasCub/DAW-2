@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background-color: #E8DDCB;
+}
+.titulo{
+    text-align: center;
+}
+.galeria{
+    width: 35%;
+    height: 400px;
+    margin-left: 32.5%;
+}
+.img-container{
+    width: 320px;
+    height: 180px;
+    background-color: #033649;
+    margin-bottom: 25px;
+}
+.drch{
+    float: left;
+}
+.izq{
+    float: right;
+}
+img{
+    width: 95%;
+    height: 91%;
+    margin: 2.5%;
+}   
+.mask{
+    overflow: hidden;
+    visibility: hidden;
+}

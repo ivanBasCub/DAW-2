@@ -8,30 +8,28 @@
 <body>
     <?php
         // Realizamos la conexion a la BBDD
-        require "../login_mysql.php";
+        require "../con_mysql.php";
         
         $con = connect();
 
         // Leemos los datos del formulario
         $nombre = $_POST["name"];
         $edad = $_POST["edad"];
-        
+
         // Preparamos la consulta SQL
-        $consultaInsert = $con -> prepare("insert into presonas(nombre,edad) value(?,?)");
+        $query = "insert into pruebas.personas(nombre,edad) value(?,?)"; 
+        $consultaInsert = $con -> prepare($query);
         
         // Preparamos los parametros de la consulta SQL
-        $consultaInsert -> bind_param("si",$nombre,$edad);
+        $consultaInsert -> bind_param('si',$nombre,$edad);
         
         // Ejecutamos la consuta
         if($consultaInsert ->execute()){
-            echo "Todo bien";
+            echo "Se ha insertado correctamente la información";
+            header("Location: select_personas.php");
         }else{
-            echo "mal";
+            echo $con -> error;
         }
-
-        $consultaSelect = $con -> prepare("select * from personas");
-    
-
     ?>    
 </body>
 </html>

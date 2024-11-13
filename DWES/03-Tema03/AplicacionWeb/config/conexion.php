@@ -1,9 +1,9 @@
 <?php
     // Constantes con la información del servidor, el usuario y la BBDD que vamos a usar
-    const IP_SERVER = "10.195.136.22";
-    const DB_USER_NAME = "admin";
-    const DB_USER_PASSWORD = "aaa111!!!";
-    const DB_DATABASE_NAME = "pruebas";
+    const IP_SERVER = "localhost";
+    const DB_USER_NAME = "root";
+    const DB_USER_PASSWORD = "";
+    const DB_DATABASE_NAME = "gestion_alumnos";
     
     // Fucion para conectarse a la BBDD 
     function connect(){
@@ -17,4 +17,3 @@
         
         return $mysql_connect;
     }
-    

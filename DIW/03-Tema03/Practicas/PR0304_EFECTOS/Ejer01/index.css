@@ -1,0 +1,26 @@
+body{
+    background-color: grey;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    background-color: #303728;
+    color: #92977F;
+    width: 30%;
+    padding: 0;
+}
+li{
+    width: 95%;
+    padding: 1%;
+    margin-left: 1%;
+    align-items: center;
+    border-bottom: 1px solid #4A5A26;
+    transition-property: background-color, color;
+    transition-duration: 1s; 
+}
+li:hover{
+    background-color: #96C11F;
+    color: white;
+    transition-property: background-color, color;
+    transition-duration: 0.01s;
+}
