@@ -11,6 +11,10 @@ function start_html($css){
             echo "<title>Gestor de alumnos</title>";
         echo "</head>";
     echo "<body>";
+        echo "<header>";
+            echo "<h1>Gestor de Alumnos</h1>";
+        echo"</header>";
         echo "<main>";
+
 }
 

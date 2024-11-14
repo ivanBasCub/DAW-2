@@ -39,8 +39,6 @@
 
     // Parte Principal de la página
     start_html("static/index.css");
-
-    echo "<a href='insertar.html' class='btn'> <img src='img/plus-circle.svg'> Agregar </a>";
     echo "<table>";
         echo "<thead>";
             echo "<th>DNI</th>";
@@ -56,6 +54,8 @@
         data_BBDD();
 
     echo "</table>";
+
+    echo "<a href='insertar.html' class='btn'> <img src='img/plus-circle.svg'> Agregar </a>";
     fin_html();
 
 ?>

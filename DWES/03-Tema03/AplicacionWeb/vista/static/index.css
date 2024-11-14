@@ -1,17 +1,54 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+
+}
+/* Configuración del Header */
+header{
+    position: sticky;
+    top: 0;
+    background: rgb(230,249,157);
+    background: linear-gradient(75deg, rgba(230,249,157,1) 0%, rgba(200,233,142,1) 30%, rgba(127,218,137,1) 60%, rgba(4,17,34,1) 100%);
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+header h1{
+    margin: 0;
+    padding: 1%;
+}
+
+main{
+    text-align: center;
+}
+
+/* Diseño de la tabla */
 table{
     border-collapse: collapse;
     text-align: center;
-    margin: 1%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    width: 90%;
+
 }
 td,th{
-    border: 1px solid grey;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    border-bottom: 1px solid lightslategray;
+    padding: 1%;
 }
+
+td{
+    border: 1px solid lightslategray;
+
+}
+
+th{
+    background-color: #E6F99D;
+}
+
+/* Diseño de los botones */ 
 .btn{
-    background-color: rgb(41, 145, 214);
+    background-color: #E6F99D;
     text-decoration: none;
-    color: white;
+    color: black;
     align-items: center;
     justify-content: center;
     padding: 5px;
@@ -19,6 +56,5 @@ td,th{
     border: none;
 }
 
-.btn img{
-    filter: invert(98%) sepia(11%) saturate(91%) hue-rotate(357deg) brightness(115%) contrast(100%);
-}
+/* Este comando es para meter un filtro a las imagenes svg */
+/* filter: invert(98%) sepia(11%) saturate(91%) hue-rotate(357deg) brightness(115%) contrast(100%); */

@@ -5,7 +5,7 @@
     include "../config/pie.php";
 
     // Parte Principal del formulario
-    start_html("static/modify_data.css");
+    start_html("static/index.css");
 
         echo "<h2>Modifica los datos del alumno</h2>";
         echo "<form action='../../controlador/modificar.php' method='post'>";

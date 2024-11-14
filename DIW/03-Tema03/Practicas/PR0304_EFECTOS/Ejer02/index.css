@@ -1,3 +1,4 @@
+/* Modificaciones generales de la web */
 body{
     margin: 0;
     background-color: #E8DDCB;
@@ -5,29 +6,156 @@ body{
 .titulo{
     text-align: center;
 }
+.titulo h2{
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
 .galeria{
-    width: 35%;
+    width: 37.5%;
     height: 400px;
-    margin-left: 32.5%;
+    margin-left: 31.25%;
 }
 .img-container{
-    width: 320px;
-    height: 180px;
-    background-color: #033649;
-    margin-bottom: 25px;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 10px solid #031634;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #CDB380;
 }
-.drch{
-    float: left;
-}
-.izq{
-    float: right;
+.img-container .mask{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
 }
 img{
-    width: 95%;
-    height: 91%;
-    margin: 2.5%;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+/* Aliniamiento de los contenedores */
+.drch{
+    float: right;
+}
+.izq{
+    float:left;
+}
+/* Estilo del texto que va a estar oculto */
+.img-container h2{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+}
+.img-container p{
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px;
+    text-align: center
+}
+.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #031634;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #031634;
+    border-radius: 5px;
+}
+.info:hover {
+    box-shadow: 0 0 5px #031634
+}
+
+/* Vista del demo 2 */
+.demo2 img{
+    transition: all 0.2s ease-in;
+}
+.demo2 .mask{
+    background-color: #CDB380; 
+	width: 300px;
+    padding: 60px;
+	height: 300px;
+	opacity: 0;
+	transform: translate(265px, 145px) rotate(45deg);
+	transition: all 0.2s ease-in-out;
+}
+.demo2 h2{
+    border-bottom: rgba(3, 54, 73, 0.3) 1px solid;
+    background: transparent;
+    margin: 20px 40px 0 40px;
+    transform: translate(300px, -300px);
+    transition: all 0.2s ease-in-out;
+}
+.demo2 p{
+    transform: translate(-200px, 200px);
+    transition: all 0.2s ease-in-out;
+}
+
+.demo2 .info { 
+    transform: translate(0px, 100px);
+	transition: all 0.2s 0.1s ease-in-out;
+}
+
+.demo2:hover .mask{
+    opacity: 0.75;
+    transform: translate(-80px,-125px) rotate(45deg);
+}
+.demo2:hover h2{
+    transform: translate(0px,-200px);
+    transition-delay: 0.3s;
+}
+.demo2:hover p{
+    transform: translate(0px,-200px);
+    transition-delay: 0.4s;
+}
+.demo2:hover .info{
+    transform: translate(0px,-200px);
+    transition-delay: 0.5s;
 }   
-.mask{
-    overflow: hidden;
-    visibility: hidden;
+
+/* Vista del demo 5 */
+.demo5 img{
+    transition: all 0.3s ease-in-out;
+}
+.demo5 .mask{
+    background-color: #CDB380;
+    transform: translateX(-300px);
+    transition: all 0.4s ease-in-out;
+}
+.demo5 h2{
+    background: #033649;
+    color: #fff;
+    box-shadow: 0px 1px 3px rgba(3, 54, 73,0.5);
+}
+.demo5 p{
+    opacity: 0;
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.demo5:hover .mask{
+    transform: translateX(0px);
+}
+.demo5:hover img{
+    transform: translateX(300px);
+    transition-delay: 0.1s;
+}
+.demo5:hover p{
+    opacity: 1;
+    transition-delay: 0.4s;
 }
