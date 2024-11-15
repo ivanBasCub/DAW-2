@@ -9,19 +9,23 @@
     <title>Añadir un nuevo Alumno</title>
 </head>
 <body>
-    <h2>Inserte los datos del nuevo alumno</h2>
-    <form action="../controlador/insertar.php" method="post">
-        <input type="text" name="nombre" placeholder="Nombre"><br>
-        <input type="text" name="apellido1" placeholder="Primer Apellido">
-        <input type="text" name="apellido2" placeholder="Segundo Apellido"><br>
-        <input type="text" name="dni" placeholder="DNI">
-        <input type="tel" name="telefono" placeholder="Numero de telefono">
-        <input type="email" name="email" placeholder="Correo Electronico"><br>
-        <input type="text" name="curso" placeholder="Curso que esta el alumno"><br>
-        <input type="submit" class="btn" value="Introducir nuevo Alumno">
-    </form>
+    <header>
+        <h1>Gestor de Alumnos</h1>
+    </header>
+    <main>
+        <h2>Inserte los datos del nuevo alumno</h2>
+        <form action="../controlador/insertar.php" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required><br>
+            <input type="text" name="apellido1" placeholder="Primer Apellido" required><br>
+            <input type="text" name="apellido2" placeholder="Segundo Apellido" required><br>
+            <input type="text" name="dni" placeholder="DNI" required><br>
+            <input type="tel" name="telefono" placeholder="Numero de telefono"><br>
+            <input type="email" name="email" placeholder="Correo Electronico" required><br>
+            <input type="numebr" name="curso" placeholder="Curso que esta el alumno" required><br>
+            <input type="submit" class="btn" value="Introducir nuevo Alumno"><br>
+        </form>
 
-    <a href="index.php" class="btn">Volver a la pagina principal</a>
-
+        <a href="index.php" class="btn">Volver a la pagina principal</a>
+        </main>
 </body>
 </html>

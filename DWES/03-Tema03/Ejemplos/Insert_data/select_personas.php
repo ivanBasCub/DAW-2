@@ -13,7 +13,7 @@
             <th>Edad</th>
         </thead>
         <?php
-            include "../con_mysql.php";
+            include "../conexion.php";
             
             $con = connect();
 

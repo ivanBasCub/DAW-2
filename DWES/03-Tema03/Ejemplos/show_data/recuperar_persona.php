@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        include "../con_mysql.php";
+        include "../conexion.php";
         // Nos conectamos con la base de datos
         $con = connect();
 

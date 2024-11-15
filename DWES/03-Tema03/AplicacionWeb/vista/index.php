@@ -27,7 +27,7 @@
                     echo "<td>".$alumno["email"]."</td>";
                     echo "<td>".$alumno["curso"]."</td>";
                     echo "<td> <a href= 'modificar.php/?id=".$alumno["id_alumn"]."' class='btn'><img src='img/pencil.svg'></a> </td>";
-                    echo "<td>  <a href= '../controlador/eliminar.php/?id=".$alumno["id_alumn"]."' class='btn'><img src='img/trash.svg'></a>  </td>";
+                    echo "<td>  <a href= 'confirmacion.php/?id=".$alumno["id_alumn"]."' class='btn'><img src='img/trash.svg'></a>  </td>";
                 echo "</tr>";
                 $alumno = $lista -> fetch_assoc();
             }

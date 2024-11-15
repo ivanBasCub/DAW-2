@@ -8,7 +8,7 @@
 <body>
     <?php
         // Realizamos la conexion a la BBDD
-        require "../con_mysql.php";
+        require "../conexion.php";
         
         $con = connect();
 
