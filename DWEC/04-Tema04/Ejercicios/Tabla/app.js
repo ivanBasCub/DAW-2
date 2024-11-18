@@ -22,6 +22,28 @@ class Empleado{
                     <td>${this.#sueldo}</td>
                 </tr>`;
     }
+    // Es un metodo para pintar el contenido de la clase
+    render(){
+        // createElement crea el elemento pero no le pone en el html
+        let fila = document.createElement("tr");
+        let nombre = document.createElement("td");
+        let apellido = document.createElement("td");
+        let nacimiento = document.createElement("td");
+        let sueldo = document.createElement("td");
+        // Ponemos el contenido de cada elemento
+        nombre.textContent = this.#nombre;
+        apellido.textContent = this.#apellido;
+        nacimiento.textContent = this.#nacimiento;
+        sueldo.textContent = this.#sueldo;
+        // Les añadimos los elementos que hemos creado
+        fila.appendChild(nombre);
+        fila.appendChild(apellido);
+        fila.appendChild(nacimiento);
+        fila.appendChild(sueldo);
+
+        return fila;
+    }
+
 
     // Creamos los setters y los getters de la clase
     get nombre(){return this.#nombre};
@@ -56,7 +78,8 @@ empleados.forEach(empleado => {});
 */
 
 empleados.forEach(function(empleado){
-    tabla.innerHTML += empleado;
+   // tabla.innerHTML += empleado;
+   tabla.appendChild(empleado.render());
 });
 
 // Ejercicio
@@ -67,10 +90,10 @@ empleados.forEach(function(empleado){
 var aux = 0;
 
 // Escogemos los elemento HTML que vamos a usar para ordenar cuando se de un click encima de ellos
-let thNombre = document.getElementById("nombre");
-let thApellidos = document.getElementById("apellidos");
-let thNacimiento = document.getElementById("nacimiento");
-let thSueldo = document.getElementById("sueldo");
+let thNombre = document.getElementById("tabla-nombre");
+let thApellidos = document.getElementById("tabla-apellidos");
+let thNacimiento = document.getElementById("tabla-nacimiento");
+let thSueldo = document.getElementById("tabla-sueldo");
 
 // Creamos los eventos onclick
 thNombre.addEventListener("click",function(e) {
@@ -162,4 +185,22 @@ thSueldo.addEventListener("click",function(e) {
     })
 })
 
+// Configuramos el boton para q añadada información a la tabla
+let boton = document.getElementById("formulario-enviar");
+boton.addEventListener("click", evento => {
+    // Impide ejecutar el manejador de eventos predeterminado
+    evento.preventDefault();
+    
+    // Recogemos la información y la guardamos
+    let nombre = document.getElementById('nombre').value
+    let apellido = document.getElementById('apellidos').value
+    let nacimiento = document.getElementById('nacimiento').value
+    let sueldo = document.getElementById('sueldo').value
 
+    let empleado = new Empleado(nombre,apellido,nacimiento,sueldo)
+    empleados.push(empleado);
+
+    let tabla = document.getElementById("lista-empleados");
+    let fila = empleado.render()
+    tabla.appendChild(fila)
+})
