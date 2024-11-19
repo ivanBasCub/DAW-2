@@ -1,0 +1,65 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+
+}
+/* Configuración del Header */
+header{
+    position: sticky;
+    top: 0;
+    background-color: lightblue;
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+header h1{
+    margin: 0;
+    padding: 1%;
+}
+
+main{
+    text-align: center;
+}
+/* Diseño de los formularios */
+form{
+    margin: 1%;
+}
+form input{
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+/* Diseño de la tabla */
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    width: 90%;
+
+}
+td,th{
+    border-bottom: 1px solid lightslategray;
+    padding: 1%;
+}
+
+th{
+    background-color: lightblue;
+}
+
+/* Diseño de los botones */ 
+.btn{
+    background-color: lightblue;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Este comando es para meter un filtro a las imagenes svg */
+.btn img{
+    filter: invert(98%) sepia(11%) saturate(91%) hue-rotate(357deg) brightness(115%) contrast(100%); 
+}
+/* */

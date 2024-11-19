@@ -1,0 +1,65 @@
+body{
+    background-color: gray;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Personalización del footer y del header */
+header, footer{
+    background-color: lightgoldenrodyellow;
+    color: rgb(207, 207, 173);
+    border-radius: 5px;
+    height: 10vh;
+    margin: 2px;
+    width: 100%;
+}
+
+/* Configuracion de nav, aside y article */
+nav,aside{
+    border-radius: 5px;
+    background-color: lightskyblue;
+    flex-grow: 1;
+    color: rgb(99, 150, 182);
+    width: 20%;
+    margin: 2px;
+    height: 77vh;
+}
+article{
+    border-radius: 5px;
+    background-color: lightgreen;
+    color: rgb(101, 163, 101);
+    flex-grow: 2;
+    width: 60%;
+    height: 77vh;
+    margin: 2px;
+}
+
+/* Configuracion del layout para las pantallas pequeñas */
+@media(max-width: 640px){
+    /* Cambiamos la direccion del flex */
+    main{
+        flex-direction: column;
+    }
+    /* Configuración del header y footer */
+    header, footer{
+        height: 5vh;
+        width: 100%;
+    }
+    /* Cofiguracion del nav y aside */
+    nav, aside{
+        height: 5vh;
+        width: 100%;
+    }
+    nav{
+        order: 1;
+    }
+    aside{
+        order: 2;
+    }
+    /* Configuracion del article */
+    article{
+        width: 100%;
+    }
+}

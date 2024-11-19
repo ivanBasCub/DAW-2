@@ -17,7 +17,8 @@
 
         // Ejecutamos la consulta
         if($sentencia -> execute()){
-            echo "Se ha ejecutado correctamente";
+            echo "Se ha ejecutado correctamente<br>Numero de filas afectadas: ";
+            echo $sentencia ->rowCount();
         }else{
             echo "No se han podido insertar los datos";
         }
