@@ -54,13 +54,13 @@
             echo "<td colspan='10'><h1>ERROR</h1></td>";
             echo $e -> getMessage();
         }
-
         $con = null;
 
     ?>
 </table>
-
 <?php
     include "../config/pie.php";
+
+    echo "<a href='insertar.php' class='btn'> <img src='img/plus-circle.svg'> Agregar </a>";
     fin_html();
 ?>

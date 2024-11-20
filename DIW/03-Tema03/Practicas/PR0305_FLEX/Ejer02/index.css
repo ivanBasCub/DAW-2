@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    font-family:Arial;
+}
+/* Configuración del titulo */
+h1{
+    background-color: rgb(255, 84, 84);
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 2.5%;
+}
+/* Configuración de los botones */
+.botones{
+    display: flex;
+    flex-direction: column;
+    width: 4%;
+    position: absolute;
+    left: 11.05%;
+    top: 24.70%;
+    text-align: center;
+}
+.btn{
+    background-color: rgb(245, 245, 245);
+    border: none;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin: 1%;
+    color: black;
+    text-decoration: none;
+}
+
+/* Configuración de las tablas */
+.Tab1, .Tab2, .Tab3{
+    background-color: rgb(223, 223, 223);
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    height: 70vh;
+    margin-top: 5%;
+    display: none;
+
+}
+/* Configuración del Tab1 */
+.Tab1{
+    height: 42.5vh;
+    display: flex;
+}
+.Tab1-container{
+    width: 30%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 70vh;
+}
+.Tab1-container h2{
+    color: rgb(255, 84, 84);
+    margin: 0;
+}
+.Tab1-container p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.Tab1-container img{
+    width: 100%;
+}
+/* Configuración del Tab2 */
+.Tab2{
+    flex-wrap: wrap;
+}
+.Tab2-fila1{
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+}
+.Tab2-fila1 img{
+    width: 375px;
+    height: 375px;
+    margin: 2%;
+}
+.Tab2-fila2{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+}
+.Tab2-fila2 img{
+    width: 220px;
+    height: 220px;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+}
+/* Configuración del Tab3 */
+.Tab3{
+    height: 42.5vh;
+    flex-wrap: wrap;
+}
+.Tab3-container{
+    width: 30%;
+    margin: auto;
+}
+.Tab3-container h2{
+    color: rgb(255, 84, 84);
+    margin: 0;
+}
+.Tab3-container p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.Tab3-container img{
+    width: 100%;
+}
+/* Funcionamiento de los botones */
+.btn:active, .btn:hover{
+    background-color: rgb(223, 223, 223);
+}
+
+.container:target{
+    display: flex;
+}
+
+/* Modificaciones para pantallas mas pequeñas */
+@media(max-width: 900px){
+    .Tab1,.Tab2,.Tab3{
+        background-color: rgb(223, 223, 223);
+        position: absolute;
+        width: 98%;
+        left: 1%;
+        top: 9.25%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Configuracion de la disposición de los botonnes */
+    .botones{
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+        position: absolute;
+        left: 1%;
+        top: 10.25%;
+        text-align: center;
+    }
+    .btn{
+        background-color: rgb(245, 245, 245);
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        padding: 1%;
+    }
+    /* Configuración del Tab1 */
+    .Tab1-container{
+        width: 95%;
+        height: auto;
+    }
+    /* Configuración del Tab2 */
+    .Tab2-fila1{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .Tab2-fila2{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .Tab2-fila2 img{
+        margin: 1%;
+    }
+    /* Configuración del Tab3 */
+    .Tab3-container{
+        width: 95%;
+        margin: auto;
+        margin-top: 1%;
+    }
+    
+}
