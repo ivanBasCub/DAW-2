@@ -19,17 +19,25 @@
                 <input type="text" name="apellidos" id="apellidos">
             </div>
             <div class="formulario-fila">
-                <label for="nacimiento">Nacimiento</label>
-                <input type="number" name="nacimiento" id="nacimiento" value="2024" min="0">
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <input type="text" name="nacimiento" id="nacimiento" placeholder="dd/mm/yyyy" min="0">
             </div>
             <div class="formulario-fila">
                 <label for="sueldo">Sueldo</label>
                 <input type="number" name="sueldo" id="sueldo">    
             </div>
-            <div class="formulario-fila"></div>
+            <div class="formulario-fila">
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="formulario-fila">
+                <label for="dni">DNI</label>
+                <input type="text" name="dni" id="dni">    
+            </div>
             <div class="formulario-fila">
                 <button id="formulario-enviar">Añadir</button>
             </div>
+            
         </div>
     </form>
 
@@ -37,8 +45,10 @@
         <thead>
             <th id="tabla-nombre">Nombre</th>
             <th id="tabla-apellidos">Apellidos</th>
-            <th id="tabla-nacimiento">Año Nacimiento</th>
+            <th id="tabla-nacimiento">Fecha de nacimiento</th>
             <th id="tabla-sueldo">Sueldo</th>
+            <th id="tabla-email">Email</th>
+            <th id="tabla-dni">DNI</th>
         </thead>
         <tbody id="lista-empleados">
 

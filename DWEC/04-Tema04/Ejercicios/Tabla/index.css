@@ -9,6 +9,7 @@ td,th{
     display: grid;
     grid-template-columns: 2fr 1fr;
     width: 320px;
+    margin: 1%;
 }
 .formulario-fila{
     width: auto;
