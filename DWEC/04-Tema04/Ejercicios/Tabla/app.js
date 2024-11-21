@@ -101,18 +101,9 @@ function checkday(day,max){
 function checkDate(user_date){
     let array_date = user_date.split("/");   
     switch(array_date[1]){
-        case "01": return checkday(array_date[0],31);
+        case "01","03","05","07","08","10","12": return checkday(array_date[0],31);
         case "02": return checkday(array_date[0],28);
-        case "03": return checkday(array_date[0],31);
-        case "04": return checkday(array_date[0],30);
-        case "05": return checkday(array_date[0],31);
-        case "06": return checkday(array_date[0],30);
-        case "07": return checkday(array_date[0],31);
-        case "08": return checkday(array_date[0],31);
-        case "09": return checkday(array_date[0],30);
-        case "10": return checkday(array_date[0],31);
-        case "11": return checkday(array_date[0],30);
-        case "12": return checkday(array_date[0],31);
+        case "04","06","09","11": return checkday(array_date[0],30);
         default: return false;
     }
 }
