@@ -93,6 +93,7 @@ function checkDni(user_dni){
         alert("El DNI es falso")
     } 
 }
+
 function checkday(day,max){
     if(day > max){return false;}
     else{return true;}
@@ -248,7 +249,7 @@ boton.addEventListener("click", evento => {
     let email = document.getElementById("email").value
     let dni = document.getElementById("dni").value
 
-    let empleado = new Empleado(nombre,apellido,nacimiento,sueldo,email)
+    let empleado = new Empleado(nombre,apellido,nacimiento,sueldo,email,dni);
     empleados.push(empleado);
 
     let tabla = document.getElementById("lista-empleados");
