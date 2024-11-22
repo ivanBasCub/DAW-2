@@ -5,7 +5,6 @@
 
     // Sentencia sql
     $sql = "insert into proyecto(titulo,descripcion,periodo,curso,fecha_presentacion,nota,logotipo) values(:titulo, :descripcion, :periodo, :curso, :fecha_presentacion, :nota, :logotipo)";
-    $nota = intval($_POST["nota"]);
     
     try{
         // Preparamos la sentencia sql 
@@ -22,6 +21,7 @@
         
 
         if($sentencia ->execute()){
+            echo "Se ha realizado correctamente la consulta";
             header("Location: ../vista/index.php");
         }else{
             echo "Error en la consulta SQL";
@@ -30,6 +30,4 @@
     }catch(PDOException $e){
         echo $e -> getMessage();
     }
-
-
     $con = null;

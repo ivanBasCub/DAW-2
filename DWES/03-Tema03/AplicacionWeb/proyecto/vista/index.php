@@ -44,7 +44,7 @@
                         echo "<td> <img src='data:image/png;base64, ".base64_encode($proyecto -> logotipo)."' width = '50px' height='50px'></td>"; 
                         echo "<td>"."</td>";
                         echo "<td> <a href= '#' class='btn'><img src='img/pencil.svg'></a> </td>";
-                        echo "<td>  <a href= '#' class='btn'><img src='img/trash.svg'></a>  </td>";
+                        echo "<td>  <a href= 'confirmacion.php?id=".$proyecto -> id_proyecto."' class='btn'><img src='img/trash.svg'></a>  </td>";
                     echo "</tr>";
                 }
             }else{

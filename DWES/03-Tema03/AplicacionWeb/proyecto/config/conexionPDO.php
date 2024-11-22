@@ -2,8 +2,8 @@
 
     function conexion(){
         $servidor = 'mysql:dbname=gestion_alumnos;host=localhost';
-        $usuario = 'root';
-        $pw = '';
+        $usuario = 'admin';
+        $pw = 'aaa111!!!';
 
         try{
             $conexion = new PDO($servidor,$usuario,$pw);
