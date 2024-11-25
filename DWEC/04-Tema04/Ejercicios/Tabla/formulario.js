@@ -1,4 +1,4 @@
-
+"use strict"
 // Funcion para crear un formulario de HTML a JavaScript
 
 function crearFormulario(){
