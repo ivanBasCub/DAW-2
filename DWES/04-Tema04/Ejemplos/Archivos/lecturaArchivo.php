@@ -26,7 +26,7 @@ function lectura_archivo_1($filePath){
 function lectura_archivo_2($filePath){
     // file_get_contents devuelve una cadena con el contenido
     $contenido = file_get_contents($filePath);
-    echo "Contenido del fichero: $contenido<br>";
+    echo "<br>Contenido del fichero: $contenido<br>";
     // file_put_contents escribe datos en un fichero
     $res = file_put_contents("fichero_salida.txt","Fichero creado con file_put_contents");
     if($res){

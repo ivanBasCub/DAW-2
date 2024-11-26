@@ -8,6 +8,6 @@ echo getcwd()."\n";
 
 echo "<hr>";
 //Directorio: /xampp/htdocs
-chdir('C:\Users\pablo.poligl.1\Documents\xampp\htdocs\misPHP');
+chdir('C:\Users\ivan.bascub\Documents\xampp\htdocs\misphp');
 echo getcwd()."\n";
 ?>

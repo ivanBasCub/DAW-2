@@ -1,6 +1,6 @@
 <?php
     //creamos un directorio
-    chdir('C:\Users\pablo.poligl.1\Documents\xampp\htdocs\misPHP\UD3\4.Archivosampp\htdocs\misPHP');
+    chdir('C:\Users\ivan.bascub\Documents\xampp\htdocs\misphp');
     $directorio = "nuevo";
     if(is_dir($directorio)){
         rmdir($directorio);

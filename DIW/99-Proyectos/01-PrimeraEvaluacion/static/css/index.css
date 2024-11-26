@@ -1,0 +1,78 @@
+/* Añadimos la fuente al css Montserrat*/
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../../fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "Open-sans";
+    src: url("../../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+/* Quitamos los margenes del body e indicamos el color de fondo */
+body{
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/* Indicamos los parametros del header */
+header{
+    height: 270px;
+    width: 100%;
+    text-align: center;
+    background-image: url("../img/header.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* Aplicamos la fuente y colocamos el titulo */
+header h1{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 36px;
+    color: white;
+    padding-top: 100px;
+}
+
+/* Aplicamos la configuración de cada localización */
+.poi{
+    width: 236px;
+    height: 330px;
+    margin: 120px;
+    box-shadow: gray 1px 2px 2px;
+    float: left;
+}
+.poi img{
+    width: 100%;
+    height: auto;
+}
+/* Indicamos las fuentes que vamos a usar */
+.poi h2{
+    font-family: "Montserrat-Regular";
+    padding: 10px;
+    margin: 0;
+    margin-top: 10px;
+}
+.poi p{
+    font-family: 'Open-sans';
+    font-size: small;
+    padding: 10px;
+    padding-top: 0;
+    margin: 0;
+    color: gray;
+}
+.save{
+    font-size: small;
+    text-align: right;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+    top: 36px;
+}
+/* Hacemos la animacion de las localizaciones */
+.poi:hover img{
+    height: auto;
+    transition: all 0.2s ease-in-out;
+}

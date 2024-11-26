@@ -17,7 +17,7 @@
         $sentencia -> bindValue(":curso",$_POST["curso"],PDO::PARAM_STR);
         $sentencia -> bindValue(":fecha_presentacion",$_POST["fecha"],PDO::PARAM_STR);
         $sentencia -> bindValue(":nota",$_POST["nota"],PDO::PARAM_STR);
-        $sentencia -> bindValue(":logotipo",$_POST["logo"],PDO::PARAM_LOB);
+        $sentencia -> bindValue(":logotipo",file_get_contents($_FILES["logo"]["tmp_name"]),PDO::PARAM_LOB);
         
 
         if($sentencia ->execute()){

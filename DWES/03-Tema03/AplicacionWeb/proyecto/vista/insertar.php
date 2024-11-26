@@ -5,7 +5,7 @@
 
 
 <h2>Introducir un nuevo proyecto</h2>
-<form method="post" action="../controlador/insertarPDO.php">
+<form method="post" action="../controlador/insertarPDO.php" enctype="multipart/form-data">
     <input type="text" name="titulo" placeholder="Titulo del proyecto"><br>
     <label>Descripción del proyecto</label><br>
     <textarea name="descripcion"></textarea><br>

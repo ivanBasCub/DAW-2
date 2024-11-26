@@ -1,7 +1,7 @@
 <?php
 //Array de archivos y directorios
-chdir('C:\Users\pablo.poligl.1\Documents\xampp\htdocs');
-$directorio = "misPHP";
+chdir('C:\Users\ivan.bascub\Documents\xampp\htdocs');
+$directorio = "misphp";
 $archivos = scandir($directorio, 1);
 print_r($archivos);
 ?>

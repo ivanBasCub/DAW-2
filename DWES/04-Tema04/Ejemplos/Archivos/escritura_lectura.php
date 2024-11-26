@@ -15,3 +15,7 @@ function leer_fread($filePath){
 
     fclose($file);
 }
+
+$filePath = "matriz.txt";
+
+leer_fread($filePath);
