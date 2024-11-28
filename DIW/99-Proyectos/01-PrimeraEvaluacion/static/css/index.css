@@ -1,4 +1,4 @@
-/* Añadimos la fuente al css Montserrat*/
+/* Configuracion de todas las fuentes que vamos a usar en el proyecto*/
 @font-face {
     font-family: "Montserrat";
     src: url("../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
@@ -6,6 +6,10 @@
 @font-face {
     font-family: "Montserrat-Regular";
     src: url("../../fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Blod";
+    src: url("../../fonts/Montserrat/static/Montserrat-Bold.ttf");
 }
 @font-face {
     font-family: "Open-sans";
@@ -40,13 +44,18 @@ header h1{
 .poi{
     width: 236px;
     height: 330px;
-    margin: 120px;
+    margin-top: 120px;
+    margin-left: 120px;
     box-shadow: gray 1px 2px 2px;
     float: left;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 .poi img{
     width: 100%;
-    height: auto;
+    height: 165px;
+    transition: height 1s ease-in-out;
 }
 /* Indicamos las fuentes que vamos a usar */
 .poi h2{
@@ -71,8 +80,122 @@ header h1{
     position: relative;
     top: 36px;
 }
+/* Configuracion de la capa sobre */
+.sobre {
+    width: 236px;
+    height: 330px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 0;
+    margin-top: -302px;
+    opacity: 0;
+    position: relative;
+    z-index: 0;
+    transition: all 1s ease-in-out;
+}
+
+.sobre  label{
+    line-height: 300px;
+    font-family: "Montserrat-Regular";
+}
 /* Hacemos la animacion de las localizaciones */
 .poi:hover img{
-    height: auto;
-    transition: all 0.2s ease-in-out;
+    height: 330px;
+    transition: height 1s ease-in-out;
+}
+.poi:hover .sobre{
+    opacity: 100%;
+    margin-top: -467px;
+    transition: all 1s ease-in-out;
+
+}
+/* Configuracion del menu */
+.menu{
+    width: 220px;
+    height: 100vh;
+    float: left;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 5px gray;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat-Regular";
+    transition: all 0.5s ease-in-out;
+}
+.menu h2{
+    font-family: "Montserrat-Blod";
+}
+.menu div{
+    height: 52px;
+    font-weight: 100;
+}
+.menu-element h3{
+    font-size: small;
+    margin: 0;
+    margin-left: 10px;
+    float: left;
+    text-align: left;
+    width: 70%;
+    line-height: 26px;
+}
+.menu-element  p{
+    font-size: smaller;
+    margin: 0;
+    margin-left: 10px;
+    float: left;
+    text-align: left;
+    width: 70%;
+
+}
+.num{
+    font-size: smaller;
+    margin: 0;
+    text-align: right;
+    float: right;
+    margin-top: -10px;
+    margin-right: 10px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    padding: 2px;
+}
+/* Indicamos cual es la celda seleccionada */
+.selected{
+    border-left: 10px solid rgb(180, 180, 180);
+    background-color:  #EDEEEF;
+    transition: all 0.5s ease-in-out;
+}
+.menu-element:hover{
+    background-color:  #EDEEEF;
+}
+
+/* Configuracion de la caja de la flecha */
+#arrow{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50vh;
+    left: 200px;
+    background-color: #a3a3a3;
+    border-radius: 5px;
+    background-image: url("../img/flecha.png");
+    background-size: cover;
+    transform: rotate(90deg);
+    transition: all 0.5s ease-in-out;
+}
+.plegado{
+    transform: translateX(-200px);
+    background-color: #666;
+    transition: all 0.5s ease-in-out;
+}
+.plegado #arrow{
+    transform: rotate(-90deg);
+    transition: all 0.5s ease-in-out;
+}
+.plegado .selected{
+    background-color: #666;
+    transition: all 0.5s ease-in-out;
 }

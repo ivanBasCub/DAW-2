@@ -47,4 +47,213 @@ function crearFormulario(){
     body.appendChild(form);
 }
 
-crearFormulario();
+//crearFormulario();
+
+/* Generar el DOM con el JSON */
+/* Funciones */
+function renderDOMElement(descpElemento){
+    /* Creamos el elemento en el DOM */
+    let elemento = document.createElement(descpElemento.tag);
+    // Crea un objeto que vamos a contener los atributos del elemento
+    let listaAtributos = descpElemento.attributes;
+
+    // Se los añadimos al elemento que se ha creado
+    for(let attr in listaAtributos){
+        elemento.setAttribute(attr, listaAtributos[attr]);
+    }
+
+    // Esto es para poner valores por defecto en las variables de javascript
+    let descpContenido = descpElemento.content || [];
+
+    // For of es para iterar elemenetos de un array y aplicamos recursividad
+    for (let descpChild of descpContenido){
+        let child = renderDOMElement(descpChild);
+        elemento.appendChild(child);
+    }
+    // Meter el texto en las labels
+    if(descpElemento.textContent){
+        elemento.textContent = descpElemento.textContent;
+    }
+
+    // Devolvemos el elemento
+    return elemento;
+}
+
+function renderForm(){
+    // Recogemos la información del body
+    let body = document.getElementById("main");
+
+    // Creamos el formulario con sus atributos
+    let form = document.createElement("form");
+    form.setAttribute("action","get");
+
+    form.appendChild(renderDOMElement(formDescripcion));
+    
+    body.appendChild(form);
+
+}
+
+/* Creación de la estructura a traves del Json */
+const formDescripcion = {
+    tag: "div",
+    attributes: {
+        class: "formulario",
+        id: "formulario-contenido-div",
+    },
+    content: [
+        {
+            tag: "div",
+            attributes: {
+                class:"formulario-fila"
+            },
+            content: [
+                {
+                    tag: "label",
+                    attributes: {
+                        for: 'nombre'
+                    },
+                    textContent: 'Nombre'
+                },
+                {
+                    tag: "input",
+                    attributes:{
+                        type: 'text',
+                        id: 'nombre',
+                        name: 'nombre'
+                    },
+                }
+            ]
+        },
+        {
+            tag: "div",
+            attributes: {
+                class:"formulario-fila"
+            },
+            content: [
+                {
+                    tag: "label",
+                    attributes: {
+                        for: 'apellidos'
+                    },
+                    textContent: 'Apellidos'
+                },
+                {
+                    tag: "input",
+                    attributes:{
+                        type: 'text',
+                        id: 'apellidos',
+                        name: 'apellidos'
+                    },
+                }
+            ]
+        },
+        {
+            tag: "div",
+            attributes: {
+                class:"formulario-fila"
+            },
+            content: [
+                {
+                    tag: "label",
+                    attributes: {
+                        for: 'nacimiento'
+                    },
+                    textContent: 'Fecha de nacimiento'
+                },
+                {
+                    tag: "input",
+                    attributes:{
+                        type: 'text',
+                        id: 'nacimiento',
+                        name: 'nacimiento'
+                    },
+                }
+            ]
+        },
+        {
+            tag: "div",
+            attributes: {
+                class:"formulario-fila"
+            },
+            content: [
+                {
+                    tag: "label",
+                    attributes: {
+                        for: 'sueldo'
+                    },
+                    textContent: 'Sueldo'
+                },
+                {
+                    tag: "input",
+                    attributes:{
+                        type: 'text',
+                        id: 'sueldo',
+                        name: 'sueldo'
+                    },
+                }
+            ]
+        },
+        {
+            tag: "div",
+            attributes: {
+                class:"formulario-fila"
+            },
+            content: [
+                {
+                    tag: "label",
+                    attributes: {
+                        for: 'email'
+                    },
+                    textContent: 'Nombre'
+                },
+                {
+                    tag: "input",
+                    attributes:{
+                        type: 'email',
+                        id: 'email',
+                        name: 'email'
+                    },
+                }
+            ]
+        },
+        {
+            tag: "div",
+            attributes: {
+                class:"formulario-fila"
+            },
+            content: [
+                {
+                    tag: "label",
+                    attributes: {
+                        for: 'dni'
+                    },
+                    textContent: 'DNI'
+                },
+                {
+                    tag: "input",
+                    attributes:{
+                        type: 'text',
+                        id: 'dni',
+                        name: 'dni'
+                    },
+                }
+            ]
+        },
+        {
+            tag: "div",
+            attributes: {
+                class: "formulario-fila"
+            },
+            content:[
+                {
+                    tag: "button",
+                    attributes: {id: "formulario-enviar"},
+                    textContent: "Añadir"
+                }
+            ]
+        }
+    ]
+};
+
+// Llamamos a la funcion para crear el elemento
+renderForm();

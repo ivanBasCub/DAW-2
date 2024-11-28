@@ -12,6 +12,37 @@
         <h1>Benavente</h1>
     </header>
     <main>
+        <div class="menu">
+            <h2>Benavente</h2>
+            <div class="menu-element selected">
+                <h3>turismo</h3>
+                <p>en benavente</p>
+                <label class="num">50</label>
+            </div>
+            <div class="menu-element">
+                <h3>hoteles</h3>
+                <p>en benavente</p>
+                <label class="num">7</label>
+            </div>
+            <div class="menu-element">
+                <h3>Que ver</h3>
+                <p>en benavente</p>
+                <label class="num">33</label>
+            </div>
+            <div class="menu-element">
+                <h3>Restaurantes</h3>
+                <p>en benavente</p>
+                <label class="num">10</label>
+            </div>
+            <div class="menu-element">
+                <h3>Fotos</h3>
+                <p>de benavente</p>
+                <label class="num">402</label>
+            </div>
+            <div id="arrow">
+
+            </div>
+        </div>
         <div class="poi">
             <img src="static/img/loc1.jpg">
             <div class="content">
@@ -19,25 +50,53 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 <p class="save">13 lo guardaron</p>
             </div>
+            <div class="sobre">
+                <label>Nombre del sitio</label>
+            </div>
         </div>
         <div class="poi">
             <img src="static/img/loc2.jpg">
-            <h2>Nombre del sitio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p class="save">7 lo guardaron</p>
+            <div class="content">
+                <h2>Nombre del sitio</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p class="save">22 lo guardaron</p>
+            </div>
+            <div class="sobre">
+                <label>Nombre del sitio</label>
+            </div>
         </div>
         <div class="poi">
             <img src="static/img/loc3.jpg">
-            <h2>Nombre del sitio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p class="save">22 lo guardaron</p>
+            <div class="content">
+                <h2>Nombre del sitio</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p class="save">45 lo guardaron</p>
+            </div>
+            <div class="sobre">
+                <label>Nombre del sitio</label>
+            </div>
         </div>
         <div class="poi">
             <img src="static/img/loc4.jpg">
-            <h2>Nombre del sitio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p class="save">10 lo guardaron</p>
+            <div class="content">
+                <h2>Nombre del sitio</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p class="save">7 lo guardaron</p>
+            </div>
+            <div class="sobre">
+                <label>Nombre del sitio</label>
+            </div>
         </div>
     </main>
+    <!-- Linea de codigo para implementar jQuery-->
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        // Preparamos el documento para que añada y quite el elemento plegado
+        $(document).ready(function(){
+            $("#arrow").click(function(){
+                $(".menu").toggleClass("plegado")
+            })
+        });
+    </script>
 </body>
 </html>
