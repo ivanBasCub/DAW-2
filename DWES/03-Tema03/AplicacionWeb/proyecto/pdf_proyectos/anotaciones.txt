@@ -1,0 +1,6 @@
+lo que se tiene que guardar en el campo
+http://localhost/misPHP/CRUD/proyecto/pdf_proyectos/nombredelPDF.pdf
+
+nombre de los pdf que se guardan aqui
+
+idproyecto_titulo_NombreAlum_Curso_periodo_fecha.pdf

@@ -1,0 +1,14 @@
+table{
+    border-collapse:collapse;
+    margin: 1%;
+    margin: auto;
+    text-align: center;
+}
+td{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+.marcada{
+    background-color: red;
+}

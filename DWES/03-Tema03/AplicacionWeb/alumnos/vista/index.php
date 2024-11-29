@@ -55,7 +55,8 @@
 
     echo "</table>";
 
-    echo "<a href='insertar.html' class='btn'> <img src='img/plus-circle.svg'> Agregar </a>";
+    echo "<a href='insertar.html' class='btn'><img src='img/plus-circle.svg'>Agregar nuevo Alumno</a>";
+
     fin_html();
 
 ?>
