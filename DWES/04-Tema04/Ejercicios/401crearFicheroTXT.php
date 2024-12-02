@@ -22,12 +22,10 @@
         if($sentencia -> rowCount() != 0){
             for ($i=0; $i < $sentencia -> rowCount(); $i++) {
                 $persona = $sentencia -> fetch();
-                fwrite($file, $persona -> id_persona);
-                fwrite($file, "; ");
-                fwrite($file, $persona -> nombre);
-                fwrite($file, "; ");
-                fwrite($file, $persona -> edad);
-                fwrite($file, " / ");
+                fwrite($file,"ID:".$persona -> id_persona."\n");
+                fwrite($file,"Nombre:".$persona -> nombre."\n");
+                fwrite($file,"Edad:".$persona -> edad."\n");
+
             }
 
         }
