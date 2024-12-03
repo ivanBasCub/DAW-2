@@ -9,9 +9,7 @@ td{
     height: 30px;
     border: 1px solid black;
 }
+
 .marcada{
-    background-color: red;
-}
-.mina{
-    background-color: red;
+    background-color: gray;
 }

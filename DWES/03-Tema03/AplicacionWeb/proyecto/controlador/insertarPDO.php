@@ -4,7 +4,7 @@
     $con = conexion();
 
     // Sentencia sql
-    $sqlInsert = "insert into proyecto(titulo,descripcion,periodo,curso,fecha_presentacion,nota,logotipo) values(:titulo, :descripcion, :periodo, :curso, :fecha_presentacion, :nota, :logotipo)";
+    $sqlInsert = "insert into proyecto(titulo,descripcion,periodo,curso,fecha_presentacion,nota,logotipo,modulo1,modulo2,modulo3,alumno) values(:titulo, :descripcion, :periodo, :curso, :fecha_presentacion, :nota, :logotipo, :modulo1, :modulo2, :modulo3, :alumno)";
 
     try{
         // Preparamos la sentencia sql 
@@ -18,7 +18,11 @@
         $sentencia -> bindValue(":fecha_presentacion",$_POST["fecha"],PDO::PARAM_STR);
         $sentencia -> bindValue(":nota",$_POST["nota"],PDO::PARAM_STR);
         $sentencia -> bindValue(":logotipo",file_get_contents($_FILES["logo"]["tmp_name"]),PDO::PARAM_LOB);
-        
+        $sentencia -> bindValue(":modulo1",$_POST["mod1"],PDO::PARAM_INT);
+        $sentencia -> bindValue(":modulo2",$_POST["mod2"],PDO::PARAM_INT);
+        $sentencia -> bindValue(":modulo3",$_POST["mod3"],PDO::PARAM_INT);
+        $sentencia -> bindValue(":alumno",$_POST["alumno"],PDO::PARAM_INT);
+
         if($sentencia ->execute()){
             echo "Se ha realizado correctamente la consulta";
             header("Location: ../vista/index.php");
