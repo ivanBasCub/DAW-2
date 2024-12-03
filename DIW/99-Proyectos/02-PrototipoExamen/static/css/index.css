@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EBECED;
+}
+/* Ejercicio 1 */
+/* Parte de la cabecera */
+header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom: 50px solid #37454D;
+    text-align: center;
+    text-transform: uppercase;
+}
+header h1{
+    margin: 0;
+    color: gold;
+    font-size: 48px;
+    padding-top: 10px;
+}
+header p{
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+}
+/* Parte de cuerpo */
+aside{
+    width: 250px;
+    height: 67vh;
+
+    margin: 3px;
+    position: absolute;
+}
+main{
+    width: 816px;
+    height: 67vh;
+    left: 264px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+/* Parte del footer */
+footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+    background-color: #293339;
+    border-top: 50px solid #37454D;
+    position: fixed;
+    bottom: 0;
+}
+footer p{
+    font-size: 14px;
+    padding-top: 30px;
+}
+
+/* Ejercicio 2 */
+.menu{
+    border: 1px solid #bbb;
+    color: white;
+    text-align: center;
+    background-color: white;
+}
+.menu-elemento{
+    background-color: #007FAD;
+    margin: 10px;
+    padding: 25px;
+    font-size: 16px;
+}
+.menu-elemento:hover{
+    background-color: #004760;
+    transform: translateX(15px);
+}
+
+/* Ejercicio 3 */
+.hotel{
+    width: 816px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.container1-hotel{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.heart{
+    content: url("../img/corazon.png");
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.img-hotel{
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+}
+.container2-hotel{
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+    float: left;
+}
+
+.container2-hotel h3{
+    margin: 0;
+    margin-top: 15px;
+}
+.ubicacion{
+    font-size: 14px;
+}
+.valoracion{
+    font-size: 15px;
+}
+.cara{
+    content: url("../img/corazon.png");
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+}
+.tres_estrellas{
+    content: url("../img/tres_estrellas.png");
+    width: 100px;
+    height: 20px;
+}
+.cuatro_estrellas{
+    content: url("../img/cuatro_estrellas.png");
+    width: 100px;
+    height: 20px;
+}
+.container3-hotel{
+    width: 146px;
+    height: 180px;
+    margin-top: 10px;
+    float: left;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+.container4-hotel{
+    width: 135px;
+    height: 180px;
+    float: left;
+}
+.container4-hotel label{
+    width: 50px;
+    height: 35px;
+    color: white;
+    background-color: #C94A30;
+    position: absolute;
+    text-align: center;
+    left: 795px;
+    top: 20px;
+    line-height: 35px;
+}
+.container4-hotel button{
+    width: 125px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    background-color: #66a400;
+    color: white;
+    position: absolute;
+    top: 155px;
+    margin-left: 10px;
+}
+.container4-hotel button:hover{
+    background-color: #4C7B00;
+}
