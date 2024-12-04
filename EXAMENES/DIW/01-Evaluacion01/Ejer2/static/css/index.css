@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "open-sans";
+    src: url("../fuentes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+body{
+    background-color: rgb(255, 233, 233);
+    margin: 0;
+    font-family: open-sans;
+}
+header{
+    text-align: center;
+    color: rgb(44,44,44);
+}
+header h1{
+    margin-top: 50px;
+    font-size: 28px;
+}
+main{
+    width: 900px;
+    height: 100vh;
+    background-color: white;
+    border-radius: 25px;
+    margin: auto;
+}
+.menu{
+    width: 900px;
+    height: 85px;
+    margin: auto;
+}
+.menu-element{
+    width: 18.25%;
+    float: left;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 3px solid rgb(231,231,231);
+    padding: 30px;
+}
+.menu-element a{
+    text-decoration: none;
+    color: goldenrod;
+}
+.menu-element:hover a{
+    color: #b1881c;
+}
+.activada{
+    border-bottom: 3px solid #b1881c;
+}
+.container-interruptor {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    top: 30px;
+}
+.tel, .ord{
+    width: 40px;
+    float: left;
+}
+.interruptor{
+    width: 100px;
+    height: 20px;
+    float: left;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #b1881c;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movil{
+    text-align: center;
+    width: 50px;
+    line-height: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: left;
+}
+.web{
+    width: 48px;
+    line-height: 25px;
+    float: left;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.tarjeta1{
+    width: 40%;
+    background-color: rgb(255, 233, 233);
+    text-align: center;
+    color: rgb(44,44,44);
+    border-radius: 5px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    padding: 10px;
+}
+.tarjeta1 p{
+    font-size: 12px;
+}
+.tarjeta1 h1{
+    font-size: 54px;
+    margin-top: 10px;
+}
+.anotacion{
+    text-align: center;
+    font-size: 12px;
+    color: rgb(44,44,44);
+    font-style: italic;
+    position: relative;
+    top: 50px;
+}
+.box-tarjetas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+.tarjeta{
+    width: 40%;
+    background-color: rgb(255, 233, 233);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+    margin: 15px;
+    font-weight: bold;
+    color: rgb(44,44,44);
+    text-align: center;
+    
+}
+.tarjeta:hover{
+    transform: translateY(-20px);
+}
+.tarjeta h2{
+    font-size: 42px;
+    margin: 0%;
+}
+.text-precio{
+    margin: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.line{
+    border-bottom: 2px solid rgb(231,231,231);
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+.text-content{
+    font-size: 14px;
+}
+.precio{
+    margin: 15px;
+}
+.content{
+    margin: 15px;
+}
+.btn-tarjeta{
+    width: 75%;
+    border: none;
+    color: white;
+    padding: 10px;
+    background-color: goldenrod;
+    border-radius: 5px;
+}
+footer{
+    text-align: center;
+    height: 5vh;
+}
+.oferta{
+    color: white;
+    background: goldenrod;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(90deg, gold 0%, #b1881c 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.oferta p{
+    margin: 0;
+    color: rgb(44,44,44);
+}

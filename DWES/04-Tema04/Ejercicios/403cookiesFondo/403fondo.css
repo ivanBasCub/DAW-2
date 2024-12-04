@@ -1,0 +1,20 @@
+.claro{
+    background-color: rgb(103, 192, 52);
+    color: black;
+}
+.oscuro{
+    background-color: gray;
+    color: white;
+}
+form{
+    margin: 10px;
+}
+a{
+    padding: 2px;
+    background-color: rgb(240, 240, 240);
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 2px;
+}
