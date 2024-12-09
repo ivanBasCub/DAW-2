@@ -1,15 +1,48 @@
-table{
-    border-collapse:collapse;
-    margin: 1%;
-    margin: auto;
+body {
+    font-family: 'Arial', sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Decoracion del formulario */
+#formulario{
+    text-align: center;
+    margin: 10px;
+}
+input{
+    margin: 5px;
+}
+/* Decoracion de la tabla */
+#tablero{
+    border-collapse: collapse;
+    margin: auto;
 }
 td{
     width: 30px;
     height: 30px;
-    border: 1px solid black;
+    background-color: #666;
+    border: 2px solid #777;
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 1.2rem;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+td:hover{
+    background-color: #888;
+}
+.marcada{
+    background-color: #ccc;   
+}
+.derrota{
+    background-color: red;
+    color: white;
+    content: url("../img/bomba.png");
 }
 
-.marcada{
-    background-color: gray;
+.bandera{
+    content: url("../img/flag.svg");
 }

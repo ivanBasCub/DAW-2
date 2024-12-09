@@ -104,59 +104,56 @@ function addEvents(){
 }
 
 // Función para ver como va el juego
-function juego(numFilas){
-    // Seleccionamos las casillas que tienen la clase vacio
-    var lista_casilla_vacio = document.querySelectorAll("td.vacio");
-
-    // Creamos un event listener por cada elemento con la clase vacio
-    lista_casilla_vacio.forEach(element => {
-        element.addEventListener("click", function(){
-            var cantMinas = element.getAttribute("data");
-            let id = element.getAttribute("id");
-            element.classList.add("marcada");
-            if(cantMinas == 0){
-                const bordeIzqX = (id % numFilas === 0)              // Comprobamos si esta en el borde de la izquierda en el eje X
-                const bordeDrchX = (id % numFilas === numFilas - 1)  // Comprobamos si esta en el borde de la derecha en el eje X
-                
-                let casillaDerecha = document.getElementById(String(parseInt(parseInt(id)+parseInt(1))));
-                let casillaIzquierda = document.getElementById(String(parseInt(id)-parseInt(1)));
-                let casillArriba = document.getElementById(String(parseInt(id)-parseInt(numFilas)));
-                let casillAbajo = document.getElementById(String(parseInt(id)+parseInt(numFilas)));
-                let casillArribaDrch = document.getElementById(String(parseInt(id)-parseInt(parseInt(numFilas)+parseInt(1))));
-                
-
-                // Comprueba la casilla anterior
-                if(id > 0 && casillaIzquierda.classList.value === "vacio" && !bordeIzqX) casillaIzquierda.click();
-                // Comprueba la casilla siguiente
-                if(id >= 0 && casillaDerecha.classList.value === "vacio" && !bordeDrchX) casillaDerecha.click();
-                // Comprueba la casilla de arriba
-                if(id >= numFilas && document.getElementById(String(parseInt(id)-parseInt(numFilas))).classList.value === "vacio") document.getElementById(String(parseInt(id)-parseInt(numFilas))).click();
-                // Comprobamos si esta en la casilla superior izquierda
-                if(id > numFilas && !bordeIzqX && document.getElementById(String(parseInt(id)-parseInt(numFilas-1))).classList.value === "vacio") document.getElementById(String(parseInt(id)-parseInt(numFilas-1))).click();
-                // Comprobamos si esta en la casilla superior derecha
-                if(id > numFilas && !bordeDrchX && document.getElementById(String(parseInt(id)-parseInt(parseInt(numFilas)+parseInt(1)))).classList.value === "vacio") document.getElementById(String(parseInt(id)-parseInt(parseInt(numFilas)+parseInt(1)))).click();
-                // Comprueba la casilla de abajo
-                if(id < (numFilas*(numFilas-1)) && document.getElementById(String(parseInt(id)+parseInt(numFilas))).classList.value === "vacio") document.getElementById(String(parseInt(id)+parseInt(numFilas))).click();
-                // Comprobamos si esta en la casilla inferior izquerda
-                if(id < (numFilas*(numFilas-1)) && !bordeIzqX && document.getElementById(String(parseInt(id)+parseInt(numFilas-1))).classList.value === "vacio") document.getElementById(String(parseInt(id)+parseInt(numFilas-1))).click();
-                // Comprobamos si esta en la casilla inferior drch
-                if(id < (numFilas*(numFilas-1)) && !bordeDrchX && document.getElementById(String(parseInt(id)+parseInt(parseInt(numFilas)+parseInt(1)))).classList.value === "vacio") document.getElementById(String(parseInt(id)+parseInt(parseInt(numFilas)+parseInt(1)))).click();
-            }else{
-                element.innerHTML = cantMinas; 
-            }
+function juego(numFilas){ 
+    var lista_casilla_vacio = document.querySelectorAll("td.vacio"); 
+    lista_casilla_vacio.forEach(element => { 
+        element.addEventListener("click", function(){ 
+            var cantMinas = element.getAttribute("data"); 
+            let id = parseInt(element.getAttribute("id")); 
+            element.classList.add("marcada"); 
             
-        })
-    });
-    // Creamos una lista con las casillas que tienen las minas
-    var lista_bombas = document.querySelectorAll("td.mina");
-    
-    // Creamos un event listener por cada mina
-    lista_bombas.forEach(element =>{
-        element.addEventListener("click",function(e){
-            alert("BOMBA");
-        })
+            if(cantMinas == 0){ 
+                const bordeIzqX = (id % numFilas === 0); 
+                const bordeDrchX = (id % numFilas === numFilas - 1); 
+                let casillaArriba = document.getElementById(id - numFilas); 
+                let casillaArribaDrch = document.getElementById(id - numFilas + 1); 
+                let casillaArribaIzq = document.getElementById(id - numFilas - 1); 
+                let casillaIzq = document.getElementById(id - 1); let casillaDrch = document.getElementById(id + 1); 
+                let casillaAbajo = document.getElementById(id + numFilas); 
+                let casillaAbajoDrch = document.getElementById(id + numFilas + 1); 
+                let casillaAbajoIzq = document.getElementById(id + numFilas - 1);
+                
+                // Comprobar casillas laterales
+                if(casillaDrch && !bordeDrchX && casillaDrch.classList.contains("vacio") && !casillaDrch.classList.contains("marcada")) casillaDrch.click(); 
+                if(casillaIzq && !bordeIzqX && casillaIzq.classList.contains("vacio") && !casillaIzq.classList.contains("marcada")) casillaIzq.click(); 
+                // Comprobar casillas superiores
+                if(id >= numFilas){
+                    if(casillaArriba && casillaArriba.classList.contains("vacio") && !casillaArriba.classList.contains("marcada")) casillaArriba.click(); 
+                    if(casillaArribaIzq && !bordeIzqX && casillaArribaIzq.classList.contains("vacio") && !casillaArribaIzq.classList.contains("marcada")) casillaArribaIzq.click(); 
+                    if(casillaArribaDrch && !bordeDrchX && casillaArribaDrch.classList.contains("vacio") && !casillaArribaDrch.classList.contains("marcada")) casillaArribaDrch.click(); 
+                }
+                
+                // Comprobar casillas inferiores
+                if(id <= (numFilas * (numFilas-1))){
+                    if(casillaAbajo && casillaAbajo.classList.contains("vacio") && !casillaAbajo.classList.contains("marcada")) casillaAbajo.click(); 
+                    if(casillaAbajoIzq && !bordeIzqX && casillaAbajoIzq.classList.contains("vacio") && !casillaAbajoIzq.classList.contains("marcada")) casillaAbajoIzq.click(); 
+                    if(casillaAbajoDrch && !bordeDrchX && casillaAbajoDrch.classList.contains("vacio") && !casillaAbajoDrch.classList.contains("marcada")) casillaAbajoDrch.click(); 
+                }
+                
+            } else { 
+                element.innerHTML = cantMinas; 
+            } 
+        }); 
     });
 
+    // Condición de derrota
+    var lista_bombas = document.querySelectorAll("td.mina"); 
+    lista_bombas.forEach(element => { 
+        element.addEventListener("click", function(e){ 
+            alert("BOMBA");
+            element.removeEventListener("click",this.listenerCallback);
+        }); 
+    });
 }
 // MAIN
 
