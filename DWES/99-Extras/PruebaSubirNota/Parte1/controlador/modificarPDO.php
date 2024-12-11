@@ -31,4 +31,6 @@
     }catch(PDOException $e){
         echo $e -> getMessage();
     }
+
+    $con = null;
 ?>

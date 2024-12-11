@@ -1,0 +1,39 @@
+
+/* Menu en el encabezado */
+header{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-left{
+    width: 45vh;
+}
+.menu-right{
+    width: 30vh;
+}
+.element{
+    width: 15vh;
+    float: left;
+    height: 8vh;
+    text-align: center;
+}
+.element a{
+    text-decoration: none;
+    line-height: 8vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+}
+.element:hover{
+    border-bottom: 5px solid rgb(197, 105, 1);
+    
+}
+.element:hover a{
+    color: rgb(216, 216, 216);
+}
+.selected{
+    border-bottom: 5px solid rgb(255, 136, 0);
+}

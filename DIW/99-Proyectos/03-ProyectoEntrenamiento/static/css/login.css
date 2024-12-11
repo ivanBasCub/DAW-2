@@ -1,0 +1,51 @@
+/* Configuracion del Formulario */
+
+.main-top{
+    width: 30%;
+    height: 15vh;
+    color:white;
+    margin: auto;
+    text-align: center;
+}
+.main-top h2{
+    line-height: 15vh;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+main{
+    width: 25%;
+    background-color: whitesmoke;
+    margin-left: 37.5%;
+    height: 20vh;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(255, 136, 0, 0.5);
+}
+form{
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid rgba(255, 136, 0, 0.3);
+    border-radius: 10px;
+}
+.btn{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: rgba(255, 136, 0, 1);
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(197, 105, 1);
+}

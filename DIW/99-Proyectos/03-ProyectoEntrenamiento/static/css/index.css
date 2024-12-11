@@ -1,0 +1,64 @@
+
+/* Configuracion del main-top */
+.main-top{
+    width: 60%;
+    height: 35vh;
+    margin: auto;
+    color: white;
+}
+.logo{
+    width: 100px;
+    position: relative;
+    top: 5vh;
+}
+
+.main-top h2{
+    width: 80%;
+    position: relative;
+    left: 12vh;
+    top: -2vh;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.main-top h3{
+    width: 50%;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.btn{
+    background-color: rgb(255, 136, 0);
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+.btn:hover{
+    background-color: rgb(197, 105, 1);
+}
+
+/* Configuracion del Main */
+main{
+    width: 60%;
+    height: 80vh;
+    margin-top: 20vh;
+    margin: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/* Diseño de los contenedores */
+.container{
+    width: 45%;
+    height: 30vh;
+    
+}
