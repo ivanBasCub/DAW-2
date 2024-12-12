@@ -45,7 +45,7 @@
 /* Configuracion del Main */
 main{
     width: 60%;
-    height: 80vh;
+    height: 90vh;
     margin-top: 20vh;
     margin: auto;
     background-color: whitesmoke;
@@ -58,7 +58,35 @@ main{
 }
 /* Diseño de los contenedores */
 .container{
-    width: 45%;
+    width: 90%;
     height: 30vh;
-    
+    display: flex;  
+}
+.container img{
+    width: 300px;
+    margin: 1%;
+}
+.container h4{
+    color: rgb(255, 136, 0);
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.container p{
+    font-size: 14px;
+}
+.btn-noticias{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 136, 0);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    margin-left: 35%;
+    text-align: center;
+}
+@media (max-width:1000px) {
+
 }

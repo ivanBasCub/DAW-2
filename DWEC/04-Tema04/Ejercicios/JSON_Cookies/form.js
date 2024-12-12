@@ -1,0 +1,3 @@
+/* 
+Ejercicio para usar JSON y Cookies
+*/

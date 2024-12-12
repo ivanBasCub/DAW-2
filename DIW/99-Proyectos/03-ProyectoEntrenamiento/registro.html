@@ -32,20 +32,40 @@
     <main>
         <form method="post" action="index.html">
             <div class="form-flex">
+                <h4>Datos Personales</h4>
                 <input type="text" name="nomUser" placeholder="Nombre">
                 <input type="text" name="apelUser" placeholder="Apellidos">
                 <input type="email" name="emailUser" placeholder="Correo Electronico">
+                <input type="password" name="pesoUser" placeholder="Contraseña">
                 <input type="number" name="estaturaUser" placeholder="Estatura en centimetros">
                 <input type="number" name="pesoUser" placeholder="Peso en kilogramos">
             </div>
             <div class="form-flex">
-                <input type="text" name="nomUser" placeholder="Nombre">
-                <input type="text" name="apelUser" placeholder="Apellidos">
-                <input type="email" name="emailUser" placeholder="Correo Electronico">
-                <input type="number" name="estaturaUser" placeholder="Estatura en centimetros">
-                <input type="number" name="pesoUser" placeholder="Peso en kilogramos">
+                <h4>Zonas de Frecuencia Cardicaca</h4>
+                <input type="number" name="FCSprint" placeholder="Sprint">
+                <input type="number" name="FCVelocidad" placeholder="Velocidad">
+                <input type="number" name="FCCardio" placeholder="Cardio">
+                <input type="number" name="FCFitness" placeholder="Fitness">
+                <input type="number" name="FCSencillo" placeholder="Sencillo">
             </div>
+            <div class="form-flex">
+                <h4>Tipo de Corredor</h4>
+                <div class="radio">
+                    <input type="radio" name="tipoCorredor" value="1"><label>Corredor Casual</label>
+                    <input type="radio" name="tipoCorredor" value="2"><label>Corredor de medio fondo</label><br>
+                    <input type="radio" name="tipoCorredor" value="3"><label>Corredor de fondo</label>
+                    <input type="radio" name="tipoCorredor" value="4"><label>Corredor de trail</label>
+                </div>
+                <div class="radio">
+                   
+                </div>
+                <div class="radio">
 
+                </div>
+                <div class="radio">
+
+                </div>
+            </div>
         </form>
     </main>
 </body>
