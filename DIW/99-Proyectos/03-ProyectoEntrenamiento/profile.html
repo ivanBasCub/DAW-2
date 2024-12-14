@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Bascones Cubillo">
+    <link rel="stylesheet" href="static/css/body.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/profile.css">
+
+    <link rel="shortcut icon" href="static/img/logo.png" type="image/png">
+    <title>FitWay</title>
+</head>
+<body>
+    <header>
+        <div class="menu-left">
+            <div class="element"><a href="index.html">Inicio</a></div>
+            <div class="element"><a href="actividades.html">Actividades</a></div>
+            <div class="element"><a href="search.html">Explorar</a></div>
+        </div>
+        <div class="menu-right">
+            <div class="element">
+                <a href="login.html">Inicar Sesion </a>
+            </div>
+            <div class="element">
+                <a href="registro.html">Registrarse</a>
+            </div>    
+        </div>
+    </header>
+    <div class="main-top">
+        <h2>Bienvenido Usuario</h2>
+    </div>  
+    <main>
+        <div class="main-container">
+            <div class="main-titulo">
+                <h4>Datos del usuario</h4>
+            </div>
+            <div class="input-data">
+                <p>Nombre:</p>
+                <input type="text" value="Godofredo"> 
+            </div>
+            <div class="input-data">
+                <p>Apellidos:</p>
+                <input type="text" value="Milo Federico"> 
+            </div>
+            <div class="input-data">
+                <p>Correo Electronico:</p>
+                <input type="text" value="a@gmail.com"> 
+            </div>
+            <div class="input-data">
+                <p>Contraseña:</p>
+                <input type="password" value="123456789"> 
+            </div>
+            <div class="input-data">
+                <p>Estatura(cm):</p>
+                <input type="text" value="178"> 
+            </div>
+            <div class="input-data">
+                <p>Peso(kg):</p>
+                <input type="text" value="94"> 
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-titulo">
+                <h4>Zonas de Frecuencia Cardicaca</h4>
+            </div>
+            <div class="input-data">
+                <p>Sprint:</p>
+                <input type="text" value="142"> 
+            </div>
+            <div class="input-data">
+                <p>Velocidad:</p>
+                <input type="text" value="168"> 
+            </div>
+            <div class="input-data">
+                <p>Cardio:</p>
+                <input type="text" value="90"> 
+            </div>
+            <div class="input-data">
+                <p>Fitness:</p>
+                <input type="password" value="102"> 
+            </div>
+            <div class="input-data">
+                <p>Sencillo:</p>
+                <input type="text" value="60"> 
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-titulo">
+                <h4>Tipo de Corredor</h4>
+            </div>
+            <div class="select-data">
+                <select name="tipoCorredor" class="menu-select" id="menu-select">
+                    <option value="1" selected>Corredor Casual</option>
+                    <option value="2">Corredor de medio fondo</option>
+                    <option value="3">Corredor de fondo</option>
+                    <option value="4">Corredor de trail</option>
+                </select>
+            </div>
+            <div id="data-corredor">
+
+            </div>
+            <button class="btn"><a href="#">Guardar Datos</a></button>
+            <button class="btn"><a href="index.html">Borrar Cuenta</a></button>
+        </div>
+    </main>
+    <script src="static/js/profile.js"></script>
+</body>
+</html>

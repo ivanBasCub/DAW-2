@@ -22,7 +22,7 @@
     margin: 0;
 }
 .main-top h3{
-    width: 50%;
+    width: 60%;
     font-size: 30px;
     margin-left: 10px;
 }
@@ -46,7 +46,6 @@
 main{
     width: 60%;
     height: 90vh;
-    margin-top: 20vh;
     margin: auto;
     background-color: whitesmoke;
     display: flex;
@@ -58,7 +57,7 @@ main{
 }
 /* Diseño de los contenedores */
 .container{
-    width: 90%;
+    width: auto;
     height: 30vh;
     display: flex;  
 }
@@ -75,6 +74,9 @@ main{
 }
 .container p{
     font-size: 14px;
+    margin-left: 1%;
+    margin-right: 1%;
+
 }
 .btn-noticias{
     text-decoration: none;
@@ -84,9 +86,23 @@ main{
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 10px;
-    margin-left: 35%;
+    
+    position: relative;
+    top: 50px;
+    left: 40%;
     text-align: center;
 }
-@media (max-width:1000px) {
-
+@media (max-width:960px) {
+    /* Modificamos el main top */
+    .main-top{
+        width: 90%;
+    }
+    .main-top h3{
+        width: 80%;
+    }
+    /* Modificaciones del main */
+    main{
+        width: 90%;
+    }
+    
 }

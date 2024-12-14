@@ -14,7 +14,7 @@
     <header>
         <div class="menu-left">
             <div class="element"><a href="index.html">Inicio</a></div>
-            <div class="element"><a href="">Actividades</a></div>
+            <div class="element"><a href="actividades.html">Actividades</a></div>
             <div class="element"><a href="search.html">Explorar</a></div>
         </div>
         <div class="menu-right">
@@ -30,7 +30,7 @@
         <h2>Crear un Nuevo Usuario</h2>
     </div>
     <main>
-        <form method="post" action="index.html">
+
             <div class="form-flex">
                 <h4>Datos Personales</h4>
                 <input type="text" name="nomUser" placeholder="Nombre">
@@ -50,23 +50,18 @@
             </div>
             <div class="form-flex">
                 <h4>Tipo de Corredor</h4>
-                <div class="radio">
-                    <input type="radio" name="tipoCorredor" value="1"><label>Corredor Casual</label>
-                    <input type="radio" name="tipoCorredor" value="2"><label>Corredor de medio fondo</label><br>
-                    <input type="radio" name="tipoCorredor" value="3"><label>Corredor de fondo</label>
-                    <input type="radio" name="tipoCorredor" value="4"><label>Corredor de trail</label>
-                </div>
-                <div class="radio">
-                   
-                </div>
-                <div class="radio">
+                <select name="tipoCorredor" class="menu-select" id="form-select">
+                    <option value="1">Corredor Casual</option>
+                    <option value="2">Corredor de medio fondo</option>
+                    <option value="3">Corredor de fondo</option>
+                    <option value="4">Corredor de trail</option>
+                </select>
+                <div class="form-corredor" id="tipo-corredor">
 
                 </div>
-                <div class="radio">
-
-                </div>
+                <button class="btn"><a href="index.html">Registrase</a></button>
             </div>
-        </form>
     </main>
+    <script src="static/js/registro.js"></script>
 </body>
 </html>

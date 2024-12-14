@@ -1,0 +1,107 @@
+/* Configuracion del main-top */
+.main-top{
+    width: 90%;
+    text-align: center;
+    height: 10vh;
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+}
+.main-top h2{
+    font-size: 36px;
+}
+/* Configuracion del main */
+main{
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.main-container{
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+.main-titulo{
+    text-align: center;
+    width: 80%;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: rgba(255, 136, 0, 1);
+}
+.input-data{
+    width: 20%;
+    text-align: center;
+    margin: 5px;
+}
+.input-data p{
+    margin: 0;
+    margin-left: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+.input-data input{
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 136, 0, 0.3);
+}
+.select-data{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.select-data select{
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 136, 0, 0.3);
+}
+#data-corredor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+}
+.btn{
+    width: 40%;
+    background-color: rgba(255, 136, 0, 1);
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.btn:hover{
+    background-color: rgb(197, 105, 1);
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/* Cambios para q sea responsive */
+@media (max-width: 960px){
+    main{
+        width: 90%;
+        height: 72vh;
+    }
+    .input-data p{
+        margin-left: 10px;
+    }
+    .input-data input{
+        width: 100%;
+    }
+}

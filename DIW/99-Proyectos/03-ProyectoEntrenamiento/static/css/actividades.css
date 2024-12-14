@@ -1,0 +1,37 @@
+.main-top{
+    width: 90%;
+    height: 15vh;
+    color:white;
+    margin: auto;
+    text-align: center;
+}
+.main-top h2{
+    line-height: 15vh;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+main{
+    width: 90%;
+    background-color: whitesmoke;
+    margin: auto;
+    height: 60vh;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.lista-entrenamientos{
+    width: 20%;
+    height: 60vh;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;  
+}
+.entrenamiento{
+    width: 80%;
+    height: 60vh;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

@@ -37,3 +37,11 @@ header{
 .selected{
     border-bottom: 5px solid rgb(255, 136, 0);
 }
+@media (max-width: 400px) {
+    .element{
+        width: 8vh;
+    }
+    .element a{
+        font-size: 10px;
+    }
+}
