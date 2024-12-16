@@ -1,0 +1,46 @@
+/* Ivan Bascones Cubillo */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+form{
+    width: 20%;
+    margin: auto;
+    
+}
+form input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: white;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+#lista{
+    width: 15%;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+#lista li{
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+#lista li label{
+    font-size: 14px;
+}
+
+
+.marcada{
+    text-decoration: line-through;
+    color: gray;
+}
