@@ -1,0 +1,22 @@
+.container{
+    text-align: center;
+    text-transform: uppercase;
+}
+.container div{
+    border: 1px solid gray;
+}
+.col-12{
+    background-color: #235AAC;
+}
+.col-lg-6 {
+    background-color: #FFBC09;
+}
+.drch{
+    background-color: #92A237;
+}
+
+@media(max-width: 760px){
+    .izq{
+        display: none;
+    }
+}

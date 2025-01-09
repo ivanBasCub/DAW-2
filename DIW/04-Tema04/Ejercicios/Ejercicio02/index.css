@@ -1,0 +1,25 @@
+div{
+    border: 1px solid gray;
+}
+.extremo{
+    background-color: greenyellow;
+    height: 20px;
+
+}
+.col-sm-2{
+    background-color: red;
+    height: auto;
+    color: red;
+}
+.titulo{
+    background-color: #FF00FF;
+    height: 30px;
+}
+.col-md-6{
+    height: 60px;
+    background-color: #FF9955;
+}
+.col-sm-4{
+    background-color: blue;
+    height: 30px;
+}
