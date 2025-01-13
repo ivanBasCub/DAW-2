@@ -77,4 +77,9 @@ class Empleado{
     }
 }
 
+$empleado = new Empleado("Ivan","Bascones Cubillo",1600);
+
+$empleado -> setSueldoTope(2000);
+
+echo $empleado -> getSueldoTope();
 ?>
