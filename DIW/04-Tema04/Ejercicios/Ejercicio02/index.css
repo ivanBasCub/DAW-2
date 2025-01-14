@@ -3,7 +3,7 @@ div{
 }
 .extremo{
     background-color: greenyellow;
-    height: 20px;
+    height: 30px;
 
 }
 .col-sm-2{
@@ -13,13 +13,13 @@ div{
 }
 .titulo{
     background-color: #FF00FF;
-    height: 30px;
+    height: 50px;
 }
 .col-md-6{
-    height: 60px;
+    height: 100px;
     background-color: #FF9955;
 }
 .col-sm-4{
     background-color: blue;
-    height: 30px;
+    height: 50px;
 }
