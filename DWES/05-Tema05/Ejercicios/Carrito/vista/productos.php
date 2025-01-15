@@ -14,7 +14,7 @@
     <ul>
         <?php foreach($productos as $indice => $producto){ ?>
             <li>
-                <?= $producto -> getNombre() ?> - <?= $producto -> getPrecio() ?> &euro;
+            <?= $producto -> getCantidad() ?> - <?= $producto -> getNombre() ?> - <?= $producto -> getPrecio() ?> &euro;
             </li>
             <form action="../controlador/controlador.php" method="post">
                 <input type="hidden" name="indice" value="<?= $indice ?>">

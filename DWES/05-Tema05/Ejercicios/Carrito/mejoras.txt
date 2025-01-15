@@ -1,0 +1,4 @@
+Mejoras realizadas: 
+- Serialización de los productos
+- Vaciar el carrito
+- Cuando introduces dos del mismo se suman

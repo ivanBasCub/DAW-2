@@ -20,10 +20,10 @@
             echo "<ul>";
             foreach($_SESSION['carrito'] as $productos){
                 $producto = unserialize($productos);
-                echo "<li>". $producto -> getNombre() ." - ". $producto -> getPrecio(). "</li>";
+                echo "<li>".$producto -> getCantidad() ." - ". $producto -> getNombre() ." - ". $producto -> getPrecio() * $producto -> getCantidad(). " &euro;</li>";
             }
             echo "</ul>";
-            echo "<p><a href='realizar_pago.php'>Comprar</a></p>";
+            echo "<p><a href='realizar_pago.php'>Comprar</a> / <a href='../controlador/vaciar_carrito.php'>Vaciar Carrito</a> </p>";
         }
 
     ?>
