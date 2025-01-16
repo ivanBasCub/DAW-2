@@ -25,14 +25,23 @@ function renderPost(postData){
     content.setAttribute("class","postContent");
     content.innerHTML = postData["body"];
 
+    // Creamos el btn de los comentarios
     let btnComments = document.createElement("p");
     btnComments.setAttribute("id","btn");
     btnComments.innerHTML = "Comentarios";
 
+    // Creamos el boton para enviar la informacion al autor
+    let autor = document.createElement("a");
+    let href = "user.html?id=" + postData["userId"];
+    autor.innerHTML="Autor";
+    autor.setAttribute("href",href);
+
+
     postBox.appendChild(title);
     postBox.appendChild(content);
+    postBox.appendChild(autor);
     postBox.appendChild(btnComments);
-    renderComments(postData["id"],postBox); 
+    renderComments(postData["id"],postBox);
     
     // Creamos un addeventlistener para q el btn funcione
     btnComments.addEventListener("click",(e) =>{
