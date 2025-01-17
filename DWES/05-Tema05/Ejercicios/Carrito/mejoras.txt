@@ -2,3 +2,5 @@ Mejoras realizadas:
 - Serialización de los productos
 - Vaciar el carrito
 - Cuando introduces dos del mismo se suman
+- Eliminar todos los productos de un tipo del carrito.​
+- Eliminar un producto de un tipo de producto del carrito.

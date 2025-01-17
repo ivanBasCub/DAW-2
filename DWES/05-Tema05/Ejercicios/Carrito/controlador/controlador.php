@@ -31,7 +31,7 @@
                 // Si en el caso de que exista le sumamos uno y salimos del bucle
                 if($producto -> getId() == $id){
                     $cantidad = $producto -> getCantidad();
-                    $producto -> setCantidad($cantidad +1);
+                    $producto -> setCantidad($cantidad + 1);
 
                     $pd = serialize($producto);
                     $_SESSION['carrito'][$aux] = $pd;
