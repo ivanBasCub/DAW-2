@@ -18,21 +18,23 @@
         }else{
             echo "<h1>Carrito de productos:</h1>";
             echo "<ul>";
-            $aux = 0;
+            
             foreach($_SESSION['carrito'] as $productos){
                 $producto = unserialize($productos);
-                echo "<li>";
-                echo $producto -> getCantidad() ." - ". $producto -> getNombre() ." - ". $producto -> getPrecio() * $producto -> getCantidad() . " &euro;";
-                    echo "<form action='../controlador/borrar_producto.php' method='post'>";
-                        echo "<input type='submit' name='borrar' value='-1'>";
-                        echo "<input type='hidden' name='position' value='". $aux ."'>";
-                    echo "</form>";
-                    echo "<form action='../controlador/borrar_producto.php' method='post'>";
-                        echo "<input type='submit' name='quitar' value='Borrar'>";
-                        echo "<input type='hidden' name='position' value='". $aux ."'>";
-                    echo "</form>";
-                echo "</li>";
-                $aux++;
+                if($producto -> getCantidad() != 0){
+                    echo "<li>";
+                    echo $producto -> getCantidad() ." - ". $producto -> getNombre() ." - ". $producto -> getPrecio() * $producto -> getCantidad() . " &euro;";
+                        echo "<form action='../controlador/borrar_producto.php' method='post'>";
+                            echo "<input type='submit' name='borrar' value='-1'>";
+                            echo "<input type='hidden' name='id' value='". $producto -> getId() ."'>";
+                        echo "</form>";
+                        echo "<form action='../controlador/borrar_producto.php' method='post'>";
+                            echo "<input type='submit' name='quitar' value='Borrar'>";
+                            echo "<input type='hidden' name='id' value='". $producto -> getId() ."'>";
+                        echo "</form>";
+                    echo "</li>";
+                }
+                
             }
             echo "</ul>";
             echo "<p><a href='realizar_pago.php'>Comprar</a> / <a href='../controlador/vaciar_carrito.php'>Vaciar Carrito</a> </p>";
