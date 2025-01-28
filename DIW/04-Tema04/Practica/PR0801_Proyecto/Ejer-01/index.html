@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Ivan Bascones Cubillo</title>
+    <link rel="shortcut icon" href="static/img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-success bg-success mb-4">
+            <div class="container-fluid ">
+                <a class="navbar-brand text-light" href="#">
+                    <img src="static/img/logo.png" width="50px" class="nav-item">
+                    Salud Mental
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#info">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#services">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contact">Contacto</a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container col-xxl-8 ">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="static/img/imagen_hero.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Bienvenido a Salud Mental</h1>
+                    <p class="lead">Aqui te ayudamos a solucionar tus problemas con los mejores profesionales del sector</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seccion de Sobre Nosotros -->
+         <div class="container text-center" id="info">
+            <h2>Sobre Nosotros</h2>
+            <p class="lead fs-6">En Salud Mental nos encargamos de ayudar y guiar a todas las personas que necesitan hablar o solucionar todos sus problemas relacionados con la salud mental. De manera eficiente y sin sobreesforzar a las personas.</p>
+         </div>
+
+        <!-- Zona de los servicios que brinda la web -->
+        <div class="container" id="services">
+            <h3>Servicios</h3>
+            <p class="lead fs-6">Disponemos de los siguientes servicios a tu disposición</p>
+            <div class="row d-flex flex-wrap justify-content-center">
+                <div class="card col-lg-3 col-12 m-2">
+                    <img src="static/img/terapia_individual.png" height="250px"  class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Terapia Individual</h5>
+                        <p class="card-body">Atención de calidad de expertos en calidad</p>
+                        <a href="individual.html" class="btn btn-outline-info">Ver Mas</a>
+                    </div>
+                </div>
+                <div class="card pareja col-lg-3 col-12 m-2">
+                    <img src="static/img/terapia_de_parejas.png" height="250px" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Terapia de Parejas</h5>
+                        <p class="card-body">Mejora la comunicación y la relación con tu pareja</p>
+                        <a href="pareja.html" class="btn btn-outline-info">Ver Mas</a>
+                    </div>
+                </div>
+                <div class="card grupo col-lg-3 col-12 m-2">
+                    <img src="static/img/grupo_apoyo.png" height="250px" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Grupos de Apoyo</h5>
+                        <p class="card-body">Encuentra apoyo en nuestra comunidad</p>
+                        <a href="grupo.html" class="btn btn-outline-info">Ver Mas</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Zona del Contacto -->
+        <div class="container my-3" id="contact">
+            <div class="row">
+                <h3>Contacto</h3>
+                <p class="lead fs-6">Contáctanos para más información o para programar una consulta</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label form="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                    <label form="email">Correo Electronico</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label form="msg">Mensaje</label>
+                    <textarea name="msg" id="msg" class="form-control"></textarea>
+                </div>
+                <button class="btn btn-success col-12 my-2" type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top bg-dark">
+        <div class="col-md-8 d-flex align-items-center justify-content-center ps-3">
+            <span class="text-light">&copy; 2025 Salud Mental. Todos los derechos de autor reservados</span>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
