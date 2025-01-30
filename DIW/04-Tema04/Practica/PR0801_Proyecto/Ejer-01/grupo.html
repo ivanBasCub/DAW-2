@@ -55,10 +55,64 @@
                 </div>
             </div>
         </div>
+
+        <div class="container text-center">
+            <h2>Haz comunidad</h2>
+            <p class="lead fs-6">En nuestra gran comunidad puedes encontrar apoyo en personas que nunca pensarias que lo hicieses. Tanto nuestros expertos como la comunidad pueden ayudarte para solucionar tus problemas</p>
+        </div>
+
+        <div class="container">
+            <form method="post">
+                <div class="row">
+                    <h2>Concertar una cita</h2>
+                    <p class="lead fs-6">Aqui puedes concertar una cita con uno de nuestros grupos</p>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label form="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Usuario">
+                    </div>
+                    <div class="form-group">
+                        <label form="email">Correo Electronico</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label form="pf">Profesional</label>
+                        <select name="pf" id="pf" class="form-select">
+                            <option value="1">Godofredo Fernandez</option>
+                            <option value="2">Ana Lucia Perez</option>
+                            <option value="3">Paco de Carglass</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label form="hora">Hora de la cita</label>
+                        <select name="hora" id="hora" class="form-select">
+                            <option value="1">10:00</option>
+                            <option value="2">10:30</option>
+                            <option value="3">11:00</option>
+                            <option value="3">11:30</option>
+                            <option value="3">12:00</option>
+                            <option value="3">12:30</option>
+                            <option value="3">13:00</option>
+                            <option value="3">13:30</option>
+                            <option value="3">14:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label form="tiempo">Tiempo de Sesion y precio</label>
+                        <select name="tiempo" id="tiempo" class="form-select">
+                            <option value="2">1 hora - 30 &euro;</option>
+                            <option value="3">2 horas - 50 &euro;</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="col-12 btn btn-outline-success my-2">Solicitar Cita</button>
+            </form>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top bg-dark fixed-bottom">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top bg-dark">
         <div class="col-md-8 d-flex align-items-center justify-content-center ps-3">
             <span class="text-light">&copy; 2025 Salud Mental. Todos los derechos de autor reservados</span>
         </div>

@@ -1,5 +1,6 @@
-.hero{
-    margin-top: 5vh;
-    background-image: url()
+.zoom{
+    transition: all .2s;
 }
-
+.zoom:hover{
+    transform: scale(1.05);
+}
