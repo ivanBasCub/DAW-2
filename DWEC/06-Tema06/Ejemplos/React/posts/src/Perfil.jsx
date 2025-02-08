@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 
@@ -33,3 +34,12 @@ export default function Perfil () {
         </div>
     )
 }
+=======
+import { useParams } from "react-router";
+
+export default function Perfil () {
+    const { userid } = useParams();
+
+    return <>{userid}</>
+}
+>>>>>>> e50a790c12bd4aad2217ccae2d7d3cbf694a1f64

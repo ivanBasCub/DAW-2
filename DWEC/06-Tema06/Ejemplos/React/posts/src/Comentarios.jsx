@@ -19,7 +19,12 @@ const Comentarios = ({ postId }) =>{
         <summary>Comentarios</summary>
         {list.map(comment => 
                 <div className="coment" key={comment.id}>
+<<<<<<< HEAD
                     <p>Autor: {comment.name}</p>
+=======
+
+                    <Link to={`/usuario/${postId}`}>{comment.name}</Link>
+>>>>>>> e50a790c12bd4aad2217ccae2d7d3cbf694a1f64
                     <p>Comentario: {comment.body}</p>
                 </div>
 
