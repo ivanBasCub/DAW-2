@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Comentarios from "./Comentarios";
+import { Link } from "react-router";
 
 export default function Posts(){
     const [posts, setPosts] = useState([]);
     const [users, setUsers] = useState([]);
-
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -33,14 +33,17 @@ export default function Posts(){
 
     return (
         <div className="post-list">
-            {posts.map(post =>
+            {posts.map(post =>{
+                const user = users.find(user => user.id === post.userId);
+                return (
                 <div className="post" key={post.id}>
                     <h1>{post.title}</h1>
-                    <p></p>
+                    <Link to={`usuario/${post.userId}`}>{user.name}</Link>
                     <p>{post.body}</p>
                     <Comentarios postId={post.id} />
                 </div>
-            )}
+                )
+            })}
         </div>
     )
 }
