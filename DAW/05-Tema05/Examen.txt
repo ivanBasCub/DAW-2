@@ -1,0 +1,6 @@
+- FTP
+- DNS
+- TOMCAT: ES UN SERVIDOR DE APLICACIONES WEB
+- Docker
+	- Volumenes
+	- Docker File vs Docker Compose

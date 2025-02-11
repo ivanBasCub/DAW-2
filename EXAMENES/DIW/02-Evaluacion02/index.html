@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroTravel - Ivan Bascones</title>
+    <link rel="stylesheet" href="static/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">
+                    Salud Mental
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="px-4 py-5 pb-2 text-center bg-primary text-light">
+            <h1 class="display-4 fw-bold">Explora Europa con EuroTravel</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead fs-4">Los mejores destinos y paquetes a tu alcance</p>
+            </div>
+        </div>
+        <img src="static/img/inicio2.jpg" class="col-12">
+        <div class="p-4 pt-0 text-center bg-primary">
+            <a href="#packs" class="btn btn-light">Ver Paquetes</a>
+        </div>
+
+        <div class="container mx-auto my-4">
+            <h3 class="text-center">Destinos Populares</h3>
+            <div class="row d-flex justify-content-center">
+                <div class="card col-12 col-md-3 m-1 p-0">
+                    <img class="card-img-top bd-placeholder-img" src="static/img/th.jpg" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title">París</h5>
+                        <p class="card-text">Descubre la ciudad del amor y la Torre Eiffel</p>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3 m-1 p-0">
+                    <img class="card-img-top bd-placeholder-img" src="static/img/roma2.jpg" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Roma</h5>
+                        <p class="card-text">Explora la historia del Imperio Romano</p>
+
+                    </div>
+                </div>
+                <div class="card col-12 col-md-3 m-1 p-0">
+                    <img class="card-img-top bd-placeholder-img" src="static/img/londres2.jpg" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Londres</h5>
+                        <p class="card-text">Visita el Big Ben y el London Eye</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="packs">
+            <h3 class="text-center">Nuestros Paquetes</h3>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th class="col">Destino</th>
+                        <th class="col">Duración</th>
+                        <th class="col">Precio</th>
+                        <th class="col">Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>París</td>
+                        <td>5 días</td>
+                        <td>$1200</td>
+                        <td>
+                            <a class="btn btn-primary btn-alert" type="button">Reservar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Roma</td>
+                        <td>7 días</td>
+                        <td>$1500</td>
+                        <td>
+                            <a class="btn btn-primary btn-alert" type="button">Reservar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Londres</td>
+                        <td>6 días</td>
+                        <td>$1300</td>
+                        <td>
+                            <a class="btn btn-primary btn-alert" type="button">Reservar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="modal modal-sheet bg-body-secondary" id="confirm" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="alert">
+                    <div class="modal-content rounded-4 shadow">
+                        <div class="modal-header border-bottom-0">
+                            <h1 class="modal-title fs-5">Estas Seguro de la reserva</h1>
+                            <button type="button" class="btn-close btn-exit" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body py-0">
+                            <p>Estas seguro de reservar</p>
+                        </div>
+                        <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                            <button type="button" class="btn btn-lg btn-success btn-exit" >Si</button>
+                            <button type="button" class="btn btn-lg btn-danger btn-exit" data-bs-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container m-3 mx-auto">
+            <h3 class="text-center">Contacto</h3>
+            <form class="mx-auto">
+                <div class="form-group my-2">
+                    <label class="form-text" for="nombre">Nombre</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre">
+                </div>
+                <div class="form-group my-2">
+                    <label class="form-text" for="email">Correo Electronico</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                <div class="form-group my-2">
+                    <label class="form-text" for="msg">Mensaje</label>
+                    <textarea class="form-control" id="msg" name="msg">
+
+                    </textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer class="bg-dark text-center text-light py-2">
+        <p class="fs-6"> &copy; 05 - 02 - 2025 // Iván Báscones Cubillo</p>
+    </footer>
+    <script src="static/bootstrap/bootstrap.min.js"></script>
+    <script>
+        let modal = document.getElementById("confirm");
+        let btntable = document.querySelectorAll("a.btn-alert");
+        btntable.forEach(btn => btn.addEventListener("click",e => modal.classList.add("d-block")))
+        let btnModal = document.querySelectorAll("button.btn-exit");
+        btnModal.forEach(btn => btn.addEventListener("click",e => modal.classList.remove("d-block")))
+    </script>
+</body>
+
+</html>
